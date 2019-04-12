@@ -1,0 +1,6 @@
+if(NOT CondFormatsSerialization_FOUND)
+  set(CondFormatsSerialization_FOUND TRUE)
+  mark_as_advanced(CondFormatsSerialization_FOUND)
+cms_find_package(boost_serialization)
+list(APPEND LIBS CondFormatsSerialization)
+endif()

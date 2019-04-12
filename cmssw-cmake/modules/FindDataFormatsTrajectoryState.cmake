@@ -1,0 +1,7 @@
+if(NOT DataFormatsTrajectoryState_FOUND)
+  set(DataFormatsTrajectoryState_FOUND TRUE)
+  mark_as_advanced(DataFormatsTrajectoryState_FOUND)
+cms_find_package(boost_header)
+cms_find_package(rootcore)
+list(APPEND LIBS DataFormatsTrajectoryState)
+endif()

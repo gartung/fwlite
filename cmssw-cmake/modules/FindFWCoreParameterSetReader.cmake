@@ -1,0 +1,7 @@
+if(NOT FWCoreParameterSetReader_FOUND)
+  set(FWCoreParameterSetReader_FOUND TRUE)
+  mark_as_advanced(FWCoreParameterSetReader_FOUND)
+cms_find_package(FWCorePythonParameterSet)
+cms_find_package(FWCoreParameterSet)
+list(APPEND LIBS FWCoreParameterSetReader)
+endif()

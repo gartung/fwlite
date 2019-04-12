@@ -1,0 +1,6 @@
+if(NOT ROOTGUI_FOUND)
+	mark_as_advanced(ROOTGUI_FOUND)
+	set(ROOTGUI_FOUND TRUE)
+	cms_find_package(rootgpad)
+	list(APPEND LIBS Gui)
+endif()

@@ -1,0 +1,8 @@
+if(NOT DataFormatsEcalDigi_FOUND)
+  set(DataFormatsEcalDigi_FOUND TRUE)
+  mark_as_advanced(DataFormatsEcalDigi_FOUND)
+cms_find_package(DataFormatsEcalDetId)
+cms_find_package(DataFormatsCommon)
+cms_find_package(boost)
+list(APPEND LIBS DataFormatsEcalDigi)
+endif()

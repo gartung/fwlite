@@ -1,0 +1,6 @@
+if(NOT ROOTX11_FOUND)
+	mark_as_advanced(ROOTX11_FOUND)
+	set(ROOTX11_FOUND TRUE)
+	cms_find_package(rootcling)
+	list(APPEND LIBS ${graphicslib})
+endif()

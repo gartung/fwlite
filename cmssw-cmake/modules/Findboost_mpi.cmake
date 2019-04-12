@@ -1,0 +1,7 @@
+if(NOT BOOST_MPI_FOUND)
+	mark_as_advanced(BOOST_MPI_FOUND)
+	set(BOOST_MPI_FOUND TRUE)
+	cms_find_package(boost)
+	cms_find_package(boost_serialization)
+	list(APPEND LIBS boost_mpi)
+endif()

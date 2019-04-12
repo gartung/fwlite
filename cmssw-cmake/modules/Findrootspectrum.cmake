@@ -1,0 +1,6 @@
+if(NOT ROOTSPECTRUM_FOUND)
+	mark_as_advanced(ROOTSPECTRUM_FOUND)
+	set(ROOTSPECTRUM_FOUND TRUE)
+	cms_find_package(roothistmatrix)
+	list(APPEND LIBS Spectrum)
+endif()

@@ -1,0 +1,6 @@
+if(NOT DataFormatsWrappedStdDictionaries_FOUND)
+  set(DataFormatsWrappedStdDictionaries_FOUND TRUE)
+  mark_as_advanced(DataFormatsWrappedStdDictionaries_FOUND)
+cms_find_package(DataFormatsCommon)
+list(APPEND LIBS DataFormatsWrappedStdDictionaries)
+endif()

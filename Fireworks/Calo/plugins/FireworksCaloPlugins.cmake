@@ -1,0 +1,23 @@
+cms_add_library(FireworksCaloPlugins TYPE PLUGINS
+			SOURCES
+				*.cc
+			PUBLIC
+				FireworksTracks
+				FireworksCore
+				FireworksCalo
+				DataFormatsTrackReco
+				DataFormatsTauReco
+				DataFormatsPatCandidates
+				DataFormatsMETReco
+				DataFormatsL1Trigger
+				DataFormatsJetReco
+				DataFormatsHcalRecHit
+				DataFormatsEcalRecHit
+				DataFormatsEcalDetId
+				DataFormatsCaloTowers
+				DataFormatsCaloRecHit
+				rootinteractive
+				Eve
+				RGL
+				Geom
+			)

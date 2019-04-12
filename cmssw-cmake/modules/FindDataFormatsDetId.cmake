@@ -1,0 +1,7 @@
+if(NOT DataFormatsDetId_FOUND)
+  set(DataFormatsDetId_FOUND TRUE)
+  mark_as_advanced(DataFormatsDetId_FOUND)
+cms_find_package(DataFormatsCommon)
+cms_find_package(boost)
+list(APPEND LIBS DataFormatsDetId)
+endif()

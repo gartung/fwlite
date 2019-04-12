@@ -1,0 +1,8 @@
+if(NOT DataFormatsSiPixelDetId_FOUND)
+  set(DataFormatsSiPixelDetId_FOUND TRUE)
+  mark_as_advanced(DataFormatsSiPixelDetId_FOUND)
+cms_find_package(FWCoreMessageLogger)
+cms_find_package(FWCoreUtilities)
+cms_find_package(DataFormatsDetId)
+list(APPEND LIBS DataFormatsSiPixelDetId)
+endif()

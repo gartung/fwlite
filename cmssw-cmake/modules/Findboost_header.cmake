@@ -1,0 +1,6 @@
+if(NOT BOOST_HEADER_FOUND)
+	mark_as_advanced(BOOST_HEADER_FOUND)
+	set(BOOST_HEADER_FOUND TRUE)
+	cms_find_package(root_cxxdefaults)
+	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include)
+endif()

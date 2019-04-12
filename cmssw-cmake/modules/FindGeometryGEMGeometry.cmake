@@ -1,0 +1,8 @@
+if(NOT GeometryGEMGeometry_FOUND)
+  set(GeometryGEMGeometry_FOUND TRUE)
+  mark_as_advanced(GeometryGEMGeometry_FOUND)
+cms_find_package(DataFormatsMuonDetId)
+cms_find_package(GeometryCommonTopologies)
+cms_find_package(GeometryCommonDetUnit)
+list(APPEND LIBS GeometryGEMGeometry)
+endif()

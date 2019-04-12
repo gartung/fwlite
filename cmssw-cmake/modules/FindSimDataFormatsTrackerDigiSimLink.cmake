@@ -1,0 +1,8 @@
+if(NOT SimDataFormatsTrackerDigiSimLink_FOUND)
+  set(SimDataFormatsTrackerDigiSimLink_FOUND TRUE)
+  mark_as_advanced(SimDataFormatsTrackerDigiSimLink_FOUND)
+cms_find_package(SimDataFormatsEncodedEventId)
+cms_find_package(DataFormatsCommon)
+cms_find_package(boost)
+list(APPEND LIBS SimDataFormatsTrackerDigiSimLink)
+endif()

@@ -1,0 +1,6 @@
+if(NOT ROOTSMATRIX_FOUND)
+	mark_as_advanced(ROOTSMATRIX_FOUND)
+	set(ROOTSMATRIX_FOUND TRUE)
+	cms_find_package(rootcling)
+	list(APPEND LIBS Smatrix)
+endif()

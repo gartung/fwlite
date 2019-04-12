@@ -1,0 +1,7 @@
+if(NOT ROOTPYMVA_FOUND)
+	mark_as_advanced(ROOTPYMVA_FOUND)
+	set(ROOTPYMVA_FOUND TRUE)
+	cms_find_package(roottmva)
+	cms_find_package(numpy_c_api)
+	list(APPEND LIBS PyMVA)
+endif()

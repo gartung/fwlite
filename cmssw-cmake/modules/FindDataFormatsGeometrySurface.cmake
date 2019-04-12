@@ -1,0 +1,7 @@
+if(NOT DataFormatsGeometrySurface_FOUND)
+  set(DataFormatsGeometrySurface_FOUND TRUE)
+  mark_as_advanced(DataFormatsGeometrySurface_FOUND)
+cms_find_package(DataFormatsGeometryVector)
+cms_find_package(boost)
+list(APPEND LIBS DataFormatsGeometrySurface)
+endif()

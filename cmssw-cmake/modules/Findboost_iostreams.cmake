@@ -1,0 +1,5 @@
+if(NOT BOOST_IOSTREAMS_FOUND)
+	mark_as_advanced(BOOST_IOSTREAMS_FOUND)
+	set(BOOST_IOSTREAMS_FOUND TRUE)
+	cms_find_package(boost)
+endif()

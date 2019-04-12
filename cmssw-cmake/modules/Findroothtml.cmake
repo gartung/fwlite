@@ -1,0 +1,6 @@
+if(NOT ROOTHTML_FOUND)
+	mark_as_advanced(ROOTHTML_FOUND)
+	set(ROOTHTML_FOUND TRUE)
+	cms_find_package(rootgpad)
+	list(APPEND LIBS Html)
+endif()

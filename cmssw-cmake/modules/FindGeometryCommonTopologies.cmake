@@ -1,0 +1,7 @@
+if(NOT GeometryCommonTopologies_FOUND)
+  set(GeometryCommonTopologies_FOUND TRUE)
+  mark_as_advanced(GeometryCommonTopologies_FOUND)
+cms_find_package(FWCoreMessageLogger)
+cms_find_package(vdt_headers)
+list(APPEND LIBS GeometryCommonTopologies)
+endif()

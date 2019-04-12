@@ -1,0 +1,12 @@
+  cms_rootdict(DataFormatsGeometryCommonDetAlgo classes.h classes_def.xml)
+cms_add_library(DataFormatsGeometryCommonDetAlgo TYPE LIBRARY
+			SOURCES
+				*.cc *.cxx *.f *.f77
+			PUBLIC
+				FWCoreUtilities
+				DataFormatsCommon
+				DataFormatsGeometryVector
+				DataFormatsGeometrySurface
+				DataFormatsCLHEP
+				DataFormatsMath
+			)

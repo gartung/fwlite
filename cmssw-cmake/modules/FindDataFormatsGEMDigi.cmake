@@ -1,0 +1,8 @@
+if(NOT DataFormatsGEMDigi_FOUND)
+  set(DataFormatsGEMDigi_FOUND TRUE)
+  mark_as_advanced(DataFormatsGEMDigi_FOUND)
+cms_find_package(DataFormatsGEMRecHit)
+cms_find_package(DataFormatsMuonDetId)
+cms_find_package(DataFormatsCommon)
+list(APPEND LIBS DataFormatsGEMDigi)
+endif()

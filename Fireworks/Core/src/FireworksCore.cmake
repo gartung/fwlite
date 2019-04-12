@@ -1,0 +1,42 @@
+  cms_rootdict(FireworksCore classes.h classes_def.xml)
+cms_add_library(FireworksCore TYPE LIBRARY
+			SOURCES
+				*.cc *.cxx *.f *.f77
+			PUBLIC
+				FireworksTableWidget
+				CalibTrackerStandaloneTrackerTopology
+				FWCoreUtilities
+				FWCorePluginManager
+				FWCoreFWLite
+				FWCoreCommon
+				DataFormatsTrackReco
+				DataFormatsScalers
+				DataFormatsSiPixelDetId
+				DataFormatsMuonDetId
+				DataFormatsMath
+				DataFormatsL1GlobalTrigger
+				DataFormatsFWLite
+				DataFormatsEcalRecHit
+				DataFormatsEcalDetId
+				DataFormatsDetId
+				DataFormatsCommon
+				DataFormatsCandidate
+				CommonToolsUtils
+				boost
+				boost_program_options
+				boost_regex
+				boost_system
+				opengl
+				rootinteractive
+				rootgraphics
+				sigcpp
+				Thread
+				Eve
+				Geom
+				GeomPainter
+				GuiHtml
+				GX11
+				RGL
+				GLEW
+				Gui
+			)

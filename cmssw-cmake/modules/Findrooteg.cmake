@@ -1,0 +1,6 @@
+if(NOT ROOTEG_FOUND)
+	mark_as_advanced(ROOTEG_FOUND)
+	set(ROOTEG_FOUND TRUE)
+	cms_find_package(rootgraphics)
+	list(APPEND LIBS EG)
+endif()

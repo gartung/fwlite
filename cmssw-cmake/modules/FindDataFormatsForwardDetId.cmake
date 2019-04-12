@@ -1,0 +1,7 @@
+if(NOT DataFormatsForwardDetId_FOUND)
+  set(DataFormatsForwardDetId_FOUND TRUE)
+  mark_as_advanced(DataFormatsForwardDetId_FOUND)
+cms_find_package(DataFormatsDetId)
+cms_find_package(FWCoreUtilities)
+list(APPEND LIBS DataFormatsForwardDetId)
+endif()

@@ -1,0 +1,5 @@
+if(NOT UtilitiesGeneral_FOUND)
+  set(UtilitiesGeneral_FOUND TRUE)
+  mark_as_advanced(UtilitiesGeneral_FOUND)
+list(APPEND LIBS UtilitiesGeneral)
+endif()

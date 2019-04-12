@@ -1,0 +1,7 @@
+if(NOT DataFormatsMuonDetId_FOUND)
+  set(DataFormatsMuonDetId_FOUND TRUE)
+  mark_as_advanced(DataFormatsMuonDetId_FOUND)
+cms_find_package(FWCoreUtilities)
+cms_find_package(DataFormatsDetId)
+list(APPEND LIBS DataFormatsMuonDetId)
+endif()

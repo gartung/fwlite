@@ -1,0 +1,7 @@
+if(NOT ROOTTMVA_FOUND)
+	mark_as_advanced(ROOTTMVA_FOUND)
+	set(ROOTTMVA_FOUND TRUE)
+	cms_find_package(rootmlp)
+	cms_find_package(rootminuit)
+	list(APPEND LIBS TMVA)
+endif()

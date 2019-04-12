@@ -1,0 +1,8 @@
+if(NOT SimDataFormatsVertex_FOUND)
+  set(SimDataFormatsVertex_FOUND TRUE)
+  mark_as_advanced(SimDataFormatsVertex_FOUND)
+cms_find_package(SimDataFormatsEncodedEventId)
+cms_find_package(DataFormatsMath)
+cms_find_package(DataFormatsCommon)
+list(APPEND LIBS SimDataFormatsVertex)
+endif()

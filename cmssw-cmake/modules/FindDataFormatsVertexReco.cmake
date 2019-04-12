@@ -1,0 +1,8 @@
+if(NOT DataFormatsVertexReco_FOUND)
+  set(DataFormatsVertexReco_FOUND TRUE)
+  mark_as_advanced(DataFormatsVertexReco_FOUND)
+cms_find_package(FWCoreUtilities)
+cms_find_package(DataFormatsTrackReco)
+cms_find_package(DataFormatsCommon)
+list(APPEND LIBS DataFormatsVertexReco)
+endif()

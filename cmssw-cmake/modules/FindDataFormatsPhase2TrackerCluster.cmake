@@ -1,0 +1,8 @@
+if(NOT DataFormatsPhase2TrackerCluster_FOUND)
+  set(DataFormatsPhase2TrackerCluster_FOUND TRUE)
+  mark_as_advanced(DataFormatsPhase2TrackerCluster_FOUND)
+cms_find_package(DataFormatsPhase2TrackerDigi)
+cms_find_package(DataFormatsCommon)
+cms_find_package(rootrflx)
+list(APPEND LIBS DataFormatsPhase2TrackerCluster)
+endif()

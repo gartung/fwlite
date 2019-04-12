@@ -1,0 +1,6 @@
+if(NOT DataFormatsStdDictionaries_FOUND)
+  set(DataFormatsStdDictionaries_FOUND TRUE)
+  mark_as_advanced(DataFormatsStdDictionaries_FOUND)
+cms_find_package(rootcore)
+list(APPEND LIBS DataFormatsStdDictionaries)
+endif()

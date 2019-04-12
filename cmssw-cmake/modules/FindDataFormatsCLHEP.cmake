@@ -1,0 +1,8 @@
+if(NOT DataFormatsCLHEP_FOUND)
+  set(DataFormatsCLHEP_FOUND TRUE)
+  mark_as_advanced(DataFormatsCLHEP_FOUND)
+cms_find_package(DataFormatsMath)
+cms_find_package(clhep)
+cms_find_package(rootmath)
+list(APPEND LIBS DataFormatsCLHEP)
+endif()

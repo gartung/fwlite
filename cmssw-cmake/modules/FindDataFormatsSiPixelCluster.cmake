@@ -1,0 +1,6 @@
+if(NOT DataFormatsSiPixelCluster_FOUND)
+  set(DataFormatsSiPixelCluster_FOUND TRUE)
+  mark_as_advanced(DataFormatsSiPixelCluster_FOUND)
+cms_find_package(DataFormatsCommon)
+list(APPEND LIBS DataFormatsSiPixelCluster)
+endif()

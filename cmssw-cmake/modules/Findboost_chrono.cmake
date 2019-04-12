@@ -1,0 +1,7 @@
+if(NOT BOOST_CHRONO_FOUND)
+	mark_as_advanced(BOOST_CHRONO_FOUND)
+	set(BOOST_CHRONO_FOUND TRUE)
+	cms_find_package(boost_system)
+	cms_find_package(boost)
+	list(APPEND LIBS boost_chrono)
+endif()

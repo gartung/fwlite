@@ -1,0 +1,6 @@
+if(NOT ROOTRFLX_FOUND)
+	mark_as_advanced(ROOTRFLX_FOUND)
+	set(ROOTRFLX_FOUND TRUE)
+	cms_find_package(root_interface)
+	cms_find_package(rootcling)
+endif()

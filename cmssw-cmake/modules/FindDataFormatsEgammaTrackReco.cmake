@@ -1,0 +1,8 @@
+if(NOT DataFormatsEgammaTrackReco_FOUND)
+  set(DataFormatsEgammaTrackReco_FOUND TRUE)
+  mark_as_advanced(DataFormatsEgammaTrackReco_FOUND)
+cms_find_package(DataFormatsTrackReco)
+cms_find_package(DataFormatsCommon)
+cms_find_package(clhepheader)
+list(APPEND LIBS DataFormatsEgammaTrackReco)
+endif()

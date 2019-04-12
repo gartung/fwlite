@@ -1,0 +1,8 @@
+if(NOT DataFormatsRPCRecHit_FOUND)
+  set(DataFormatsRPCRecHit_FOUND TRUE)
+  mark_as_advanced(DataFormatsRPCRecHit_FOUND)
+cms_find_package(DataFormatsTrackingRecHit)
+cms_find_package(DataFormatsMuonDetId)
+cms_find_package(DataFormatsCommon)
+list(APPEND LIBS DataFormatsRPCRecHit)
+endif()

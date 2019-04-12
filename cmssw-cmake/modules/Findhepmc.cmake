@@ -1,0 +1,8 @@
+if(NOT HEPMC_FOUND)
+	mark_as_advanced(HEPMC_FOUND)
+	set(HEPMC_FOUND TRUE)
+	cms_find_package(hepmc_headers)
+	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
+	list(APPEND LIBS HepMCfio)
+	list(APPEND LIBS HepMC)
+endif()

@@ -1,0 +1,7 @@
+if(NOT X11_FOUND)
+	mark_as_advanced(X11_FOUND)
+	set(X11_FOUND TRUE)
+        if(NOT APPLE)
+		cms_find_package(sockets)
+        endif()
+endif()

@@ -1,0 +1,6 @@
+if(NOT HEPMC_HEADERS_FOUND)
+	mark_as_advanced(HEPMC_HEADERS_FOUND)
+	set(HEPMC_HEADERS_FOUND TRUE)
+	cms_find_package(root_cxxdefaults)
+	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include)
+endif()

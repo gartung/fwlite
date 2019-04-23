@@ -29,7 +29,7 @@ cms_add_library(FireworksCore TYPE LIBRARY
 				opengl
 				rootinteractive
 				rootgraphics
-            rootx11
+				rootx11
 				sigcpp
 				Thread
 				Eve

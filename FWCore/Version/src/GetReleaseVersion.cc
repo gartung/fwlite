@@ -5,7 +5,7 @@
 
 namespace edm {
   std::string getReleaseVersion() {
-    static std::string const releaseVersion(STRINGIFY(PROJECT_VERSION));
+    static std::string const releaseVersion("CMSSW_10_5_0");
     return releaseVersion; 
   }
 }

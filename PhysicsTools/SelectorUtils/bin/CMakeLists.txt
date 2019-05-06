@@ -13,5 +13,4 @@ cms_add_binary(calculateIdMD5 TYPE BINARY
 				DataFormatsPatCandidates
 				root
 				boost
-				boost_python
 			)

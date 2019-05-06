@@ -1,7 +1,7 @@
 if(NOT SELF_FOUND)
 	mark_as_advanced(SELF_FOUND)
 	set(SELF_FOUND TRUE)
-	list(APPEND INCLUDE_DIRS /home/gartung/CMSSW_10_5_0_FWLITE/src)
+	list(APPEND INCLUDE_DIRS /home/gartung/CMSSW_10_6_0_pre4_FWLITE/src)
 	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
 	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
 endif()

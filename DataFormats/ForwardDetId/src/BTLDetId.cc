@@ -1,7 +1,4 @@
 #include "DataFormats/ForwardDetId/interface/BTLDetId.h"
-constexpr std::array<int,4> BTLDetId::kTypeBoundariesReference;
-constexpr std::array<int,4> BTLDetId::kTypeBoundariesBarZflat;
-constexpr std::array<int,4> BTLDetId::kTypeBoundariesBarPhiFlat;
 
 /** Returns BTL iphi index for crystal according to type tile or bar */
 int BTLDetId::iphi( CrysLayout lay ) const {

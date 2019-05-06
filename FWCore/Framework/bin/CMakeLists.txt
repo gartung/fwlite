@@ -44,21 +44,6 @@ cms_add_binary(cmsRunJE TYPE BINARY
 				boost
 				boost_program_options
 			)
-cms_add_binary(cmsRunPyDev TYPE BINARY
-			SOURCES
-				cmsRunPyDev.cpp
-			PUBLIC
-				FWCorePyDevParameterSet
-				FWCoreParameterSet
-				FWCoreUtilities
-				FWCoreServiceRegistry
-				FWCorePluginManager
-				FWCoreMessageLogger
-				FWCoreFramework
-				tbb
-				boost
-				boost_program_options
-			)
 cms_add_binary(cmsRunTC TYPE BINARY
 			SOURCES
 				cmsRun.cpp

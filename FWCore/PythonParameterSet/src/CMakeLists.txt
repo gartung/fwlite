@@ -6,5 +6,5 @@ cms_add_library(FWCorePythonParameterSet TYPE LIBRARY
 				FWCoreParameterSet
 				DataFormatsProvenance
 				python
-				p2-pybind11
+				py2_pybind11
 			)

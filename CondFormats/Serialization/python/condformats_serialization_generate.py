@@ -29,7 +29,7 @@ import subprocess
 
 import clang.cindex
 
-clang_version = (5,0,0)
+clang_version = None
 
 headers_template = '''
 #include "{headers}"

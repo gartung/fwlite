@@ -29,7 +29,15 @@ namespace edm {
   class ESProxyIndex {
   public:
     using Value_t = int;
+#ifndef __clang__
     constexpr ESProxyIndex() noexcept = default;
+#else
+#if __has_feature(constexpr)
+    constexpr ESProxyIndex() noexcept = default;
+#else
+    constexpr ESProxyIndex() noexcept: index_{} {};
+#endif
+#endif
     constexpr explicit ESProxyIndex(Value_t iValue) noexcept : index_{iValue} {}
     constexpr ESProxyIndex(ESProxyIndex const&) noexcept = default;
     constexpr ESProxyIndex(ESProxyIndex&&) noexcept = default;

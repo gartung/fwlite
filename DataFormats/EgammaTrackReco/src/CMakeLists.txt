@@ -3,8 +3,8 @@ cms_add_library(DataFormatsEgammaTrackReco TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
-				clhepheader
 				DataFormatsEgammaReco
 				DataFormatsTrackReco
 				DataFormatsCommon
+				clhepheader
 			)

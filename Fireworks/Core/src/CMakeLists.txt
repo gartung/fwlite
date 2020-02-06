@@ -29,6 +29,7 @@ cms_add_library(FireworksCore TYPE LIBRARY
 				opengl
 				rootinteractive
 				rootgraphics
+				rootx11
 				sigcpp
 				rootged
 				Thread
@@ -36,7 +37,6 @@ cms_add_library(FireworksCore TYPE LIBRARY
 				Geom
 				GeomPainter
 				GuiHtml
-				GX11
 				RGL
 				GLEW
 				Gui

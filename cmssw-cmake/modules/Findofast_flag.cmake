@@ -1,5 +1,5 @@
 if(NOT OFAST_FLAG_FOUND)
-  mark_as_advanced(OFAST_FLAG_FOUND)
-  set(OFAST_FLAG_FOUND TRUE)
-  list(APPEND PROJECT_CXXFLAGS  -Ofast)
+	mark_as_advanced(OFAST_FLAG_FOUND)
+	set(OFAST_FLAG_FOUND TRUE)
+	list(APPEND  PROJECT_CXXFLAGS  -Ofast)
 endif()

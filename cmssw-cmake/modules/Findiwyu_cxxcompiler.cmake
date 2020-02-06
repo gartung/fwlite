@@ -1,5 +1,5 @@
 if(NOT IWYU_CXXCOMPILER_FOUND)
-  mark_as_advanced(IWYU_CXXCOMPILER_FOUND)
-  set(IWYU_CXXCOMPILER_FOUND TRUE)
-  cms_find_package(llvm_cxxcompiler)
+	mark_as_advanced(IWYU_CXXCOMPILER_FOUND)
+	set(IWYU_CXXCOMPILER_FOUND TRUE)
+	cms_find_package(llvm_cxxcompiler)
 endif()

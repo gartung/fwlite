@@ -9,6 +9,5 @@ cms_add_library(DataFormatsMETReco TYPE LIBRARY
 				DataFormatsJetReco
 				DataFormatsRecoCandidate
 				DataFormatsCommon
-				boost
 				root
 			)

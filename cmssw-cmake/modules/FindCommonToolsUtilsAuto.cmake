@@ -1,0 +1,8 @@
+if(NOT CommonToolsUtilsAuto_FOUND)
+  set(CommonToolsUtilsAuto_FOUND TRUE)
+  mark_as_advanced(CommonToolsUtilsAuto_FOUND)
+cms_find_package(FWCoreParameterSet)
+cms_find_package(FWCorePluginManager)
+cms_find_package(FWCoreFramework)
+list(APPEND LIBS CommonToolsUtilsAuto)
+endif()

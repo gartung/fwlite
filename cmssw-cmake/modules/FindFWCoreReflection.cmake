@@ -1,0 +1,7 @@
+if(NOT FWCoreReflection_FOUND)
+  set(FWCoreReflection_FOUND TRUE)
+  mark_as_advanced(FWCoreReflection_FOUND)
+cms_find_package(FWCoreUtilities)
+cms_find_package(rootcore)
+list(APPEND LIBS FWCoreReflection)
+endif()

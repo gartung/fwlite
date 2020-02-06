@@ -6,6 +6,7 @@ cms_add_library(DataFormatsTrackReco TYPE LIBRARY
 				FWCoreUtilities
 				DataFormatsTrackerCommon
 				DataFormatsTrackingRecHit
+				DataFormatsSiPixelCluster
 				DataFormatsSiStripDetId
 				DataFormatsSiPixelDetId
 				DataFormatsBeamSpot

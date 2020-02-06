@@ -1,6 +1,7 @@
 if(NOT DataFormatsFWLite_FOUND)
   set(DataFormatsFWLite_FOUND TRUE)
   mark_as_advanced(DataFormatsFWLite_FOUND)
+cms_find_package(FWCoreReflection)
 cms_find_package(FWCoreUtilities)
 cms_find_package(FWCoreParameterSet)
 cms_find_package(FWCoreFWLite)

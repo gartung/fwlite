@@ -4,6 +4,7 @@ cms_add_library(DataFormatsTrackerRecHit2D TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				GeometryCommonDetUnit
+				FWCoreFramework
 				FWCoreMessageLogger
 				DataFormatsPhase2TrackerCluster
 				DataFormatsTrajectorySeed

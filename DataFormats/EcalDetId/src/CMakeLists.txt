@@ -6,5 +6,4 @@ cms_add_library(DataFormatsEcalDetId TYPE LIBRARY
 				FWCoreUtilities
 				DataFormatsDetId
 				DataFormatsCommon
-				boost
 			)

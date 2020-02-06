@@ -3,6 +3,7 @@ cms_add_library(DataFormatsTrajectorySeed TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				clhepheader
 				GeometryCommonDetUnit
 				FWCoreUtilities
 				DataFormatsTrackingRecHit
@@ -11,5 +12,4 @@ cms_add_library(DataFormatsTrajectorySeed TYPE LIBRARY
 				DataFormatsTrajectoryState
 				DataFormatsCLHEP
 				DataFormatsCommon
-				clhepheader
 			)

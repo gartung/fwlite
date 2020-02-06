@@ -4,6 +4,7 @@ cms_add_library(DataFormatsParticleFlowCandidate TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				FWCoreUtilities
+				DataFormatsMuonReco
 				DataFormatsCSCRecHit
 				DataFormatsDTRecHit
 				DataFormatsGsfTrackReco

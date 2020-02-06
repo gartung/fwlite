@@ -5,6 +5,7 @@ cms_add_library(DataFormatsCandidate TYPE LIBRARY
 			PUBLIC
 				FWCoreUtilities
 				DataFormatsMath
+				DataFormatsGeometryVector
 				DataFormatsCommon
 				rootmath
 			)

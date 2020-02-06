@@ -5,5 +5,4 @@ cms_add_library(DataFormatsHcalDetId TYPE LIBRARY
 			PUBLIC
 				FWCoreUtilities
 				DataFormatsDetId
-				boost
 			)

@@ -4,5 +4,4 @@ cms_add_library(DataFormatsScalers TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				DataFormatsCommon
-				boost
 			)

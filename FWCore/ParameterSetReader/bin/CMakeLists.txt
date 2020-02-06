@@ -1,4 +1,4 @@
-cms_add_binary(edmConfigHashPSR TYPE BINARY
+cms_add_binary(edmConfigHash TYPE BINARY
 			SOURCES
 				edmConfigHash.cpp
 			PUBLIC
@@ -6,7 +6,7 @@ cms_add_binary(edmConfigHashPSR TYPE BINARY
 				FWCoreParameterSet
 				boost
 			)
-cms_add_binary(edmParameterSetDumpPSR TYPE BINARY
+cms_add_binary(edmParameterSetDump TYPE BINARY
 			SOURCES
 				edmParameterSetDump.cpp
 			PUBLIC

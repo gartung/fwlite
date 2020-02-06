@@ -6,6 +6,7 @@ cms_add_library(DataFormatsPatCandidates TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				SimDataFormatsJetMatching
 				DataFormatsEcalRecHit
 				DataFormatsCaloTowers
 				DataFormatsHLTReco

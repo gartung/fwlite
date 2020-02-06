@@ -5,7 +5,6 @@ cms_add_library(FWCoreUtilities TYPE LIBRARY
 				boost
 				boost_filesystem
 				boost_regex
-				rootcore
 				libuuid
 				tbb
 				md5

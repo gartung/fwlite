@@ -3,7 +3,9 @@ cms_add_library(DataFormatsRecoCandidate TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				SimDataFormatsTrackingAnalysis
 				SimDataFormatsGeneratorProducts
+				DataFormatsHcalRecHit
 				DataFormatsEgammaReco
 				DataFormatsCaloTowers
 				DataFormatsTrackReco

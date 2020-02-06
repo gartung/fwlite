@@ -5,5 +5,6 @@ cms_add_library(FWCoreCommon TYPE LIBRARY
 			PUBLIC
 				FWCoreUtilities
 				FWCoreParameterSet
+				DataFormatsCommon
 				DataFormatsProvenance
 			)

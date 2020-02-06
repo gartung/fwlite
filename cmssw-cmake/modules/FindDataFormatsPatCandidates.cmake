@@ -1,6 +1,7 @@
 if(NOT DataFormatsPatCandidates_FOUND)
   set(DataFormatsPatCandidates_FOUND TRUE)
   mark_as_advanced(DataFormatsPatCandidates_FOUND)
+cms_find_package(SimDataFormatsJetMatching)
 cms_find_package(DataFormatsEcalRecHit)
 cms_find_package(DataFormatsCaloTowers)
 cms_find_package(DataFormatsHLTReco)

@@ -5,5 +5,4 @@ cms_add_library(DataFormatsEcalDigi TYPE LIBRARY
 			PUBLIC
 				DataFormatsEcalDetId
 				DataFormatsCommon
-				boost
 			)

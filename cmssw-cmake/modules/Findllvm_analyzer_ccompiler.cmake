@@ -1,5 +1,5 @@
 if(NOT LLVM_ANALYZER_CCOMPILER_FOUND)
-	mark_as_advanced(LLVM_ANALYZER_CCOMPILER_FOUND)
-	set(LLVM_ANALYZER_CCOMPILER_FOUND TRUE)
-	cms_find_package(llvm_ccompiler)
+  mark_as_advanced(LLVM_ANALYZER_CCOMPILER_FOUND)
+  set(LLVM_ANALYZER_CCOMPILER_FOUND TRUE)
+  cms_find_package(llvm_ccompiler)
 endif()

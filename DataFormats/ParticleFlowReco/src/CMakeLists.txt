@@ -5,7 +5,6 @@ cms_add_library(DataFormatsParticleFlowReco TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				FWCoreUtilities
-				GeometryCaloGeometry
 				DataFormatsCandidate
 				DataFormatsVertexReco
 				DataFormatsTrajectorySeed
@@ -15,7 +14,6 @@ cms_add_library(DataFormatsParticleFlowReco TYPE LIBRARY
 				DataFormatsEgammaCandidates
 				DataFormatsCommon
 				DataFormatsCaloRecHit
-				boost
 				rootcore
 				rootmath
 				vdt_headers

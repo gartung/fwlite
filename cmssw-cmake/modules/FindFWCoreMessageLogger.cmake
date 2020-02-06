@@ -1,6 +1,7 @@
 if(NOT FWCoreMessageLogger_FOUND)
   set(FWCoreMessageLogger_FOUND TRUE)
   mark_as_advanced(FWCoreMessageLogger_FOUND)
+cms_find_package(DataFormatsProvenance)
 cms_find_package(FWCoreUtilities)
 cms_find_package(boost)
 cms_find_package(tinyxml2)

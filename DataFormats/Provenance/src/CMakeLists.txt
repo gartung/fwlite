@@ -3,7 +3,7 @@ cms_add_library(DataFormatsProvenance TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
-				FWCoreMessageLogger
+				FWCoreReflection
 				FWCoreUtilities
 				boost
 				rootcore

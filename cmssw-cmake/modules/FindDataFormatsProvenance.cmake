@@ -1,7 +1,7 @@
 if(NOT DataFormatsProvenance_FOUND)
   set(DataFormatsProvenance_FOUND TRUE)
   mark_as_advanced(DataFormatsProvenance_FOUND)
-cms_find_package(FWCoreMessageLogger)
+cms_find_package(FWCoreReflection)
 cms_find_package(FWCoreUtilities)
 cms_find_package(boost)
 cms_find_package(rootcore)

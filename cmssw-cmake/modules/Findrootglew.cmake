@@ -1,5 +1,5 @@
 if(NOT ROOTGLEW_FOUND)
-	mark_as_advanced(ROOTGLEW_FOUND)
-	set(ROOTGLEW_FOUND TRUE)
-	list(APPEND LIBS GLEW)
+  mark_as_advanced(ROOTGLEW_FOUND)
+  set(ROOTGLEW_FOUND TRUE)
+  list(APPEND LIBS GLEW)
 endif()

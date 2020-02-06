@@ -7,6 +7,7 @@ cms_add_library(DataFormatsEgammaReco TYPE LIBRARY
 				DataFormatsTrajectorySeed
 				DataFormatsTrackingRecHit
 				DataFormatsCaloRecHit
+				DataFormatsEcalRecHit
 				DataFormatsCommon
 				clhepheader
 			)

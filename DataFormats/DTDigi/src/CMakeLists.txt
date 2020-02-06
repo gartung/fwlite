@@ -6,5 +6,4 @@ cms_add_library(DataFormatsDTDigi TYPE LIBRARY
 				DataFormatsFEDRawData
 				DataFormatsMuonDetId
 				DataFormatsCommon
-				boost
 			)

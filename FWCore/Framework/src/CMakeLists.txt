@@ -4,6 +4,7 @@ cms_add_library(FWCoreFramework TYPE LIBRARY
 			PUBLIC
 				FWCoreVersion
 				FWCoreUtilities
+				FWCoreReflection
 				FWCoreServiceRegistry
 				FWCorePluginManager
 				FWCoreParameterSet

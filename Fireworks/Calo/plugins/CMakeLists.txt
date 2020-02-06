@@ -9,6 +9,7 @@ cms_add_library(FireworksCaloPlugins TYPE PLUGINS
 				DataFormatsTauReco
 				DataFormatsPatCandidates
 				DataFormatsMETReco
+				DataFormatsL1THGCal
 				DataFormatsL1Trigger
 				DataFormatsJetReco
 				DataFormatsHcalRecHit

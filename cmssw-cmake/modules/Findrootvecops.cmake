@@ -1,0 +1,6 @@
+if(NOT ROOTVECOPS_FOUND)
+  mark_as_advanced(ROOTVECOPS_FOUND)
+  set(ROOTVECOPS_FOUND TRUE)
+  cms_find_package(rootcore)
+  list(APPEND LIBS ROOTVecOps)
+endif()

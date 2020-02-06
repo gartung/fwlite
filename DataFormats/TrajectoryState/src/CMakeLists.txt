@@ -3,6 +3,6 @@ cms_add_library(DataFormatsTrajectoryState TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
-				boost_header
+				DataFormatsGeometryVector
 				rootcore
 			)

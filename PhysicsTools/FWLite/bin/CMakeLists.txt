@@ -10,8 +10,8 @@ cms_add_binary(FWLiteHistograms TYPE BINARY
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
-				root
 				boost
+				root
 			)
 cms_add_binary(FWLiteLumiAccess TYPE BINARY
 			SOURCES
@@ -25,8 +25,8 @@ cms_add_binary(FWLiteLumiAccess TYPE BINARY
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
-				root
 				boost
+				root
 			)
 cms_add_binary(FWLiteWithPythonConfig TYPE BINARY
 			SOURCES
@@ -40,8 +40,8 @@ cms_add_binary(FWLiteWithPythonConfig TYPE BINARY
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
-				root
 				boost
+				root
 			)
 cms_add_binary(FWLiteWithSelectorUtils TYPE BINARY
 			SOURCES
@@ -55,6 +55,6 @@ cms_add_binary(FWLiteWithSelectorUtils TYPE BINARY
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
-				root
 				boost
+				root
 			)

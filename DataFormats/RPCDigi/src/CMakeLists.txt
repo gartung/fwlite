@@ -6,5 +6,4 @@ cms_add_library(DataFormatsRPCDigi TYPE LIBRARY
 				CondFormatsRPCObjects
 				DataFormatsMuonDetId
 				DataFormatsCommon
-				boost
 			)

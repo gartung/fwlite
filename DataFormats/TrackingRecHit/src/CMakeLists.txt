@@ -4,6 +4,7 @@ cms_add_library(DataFormatsTrackingRecHit TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				FWCoreUtilities
+				DataFormatsGeometryCommonDetAlgo
 				GeometryCommonDetUnit
 				DataFormatsGeometrySurface
 				DataFormatsCLHEP

@@ -5,5 +5,6 @@ cms_add_library(FWCorePluginManager TYPE LIBRARY
 				FWCoreUtilities
 				boost
 				tbb
+				rootcore
 				boost_filesystem
 			)

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.11 FATAL_ERROR)
 project(cmssw C CXX Fortran)
 
 include (${CMAKE_SOURCE_DIR}/cmssw-cmake/cmake/all.cmake)
@@ -9,6 +9,8 @@ if(${CMAKE_COMPILER} STREQUAL gcc)
   cms_find_package(gcc_cxxcompiler)
   cms_find_package(gcc_ccompiler)
 endif()
+
+find_package (Python COMPONENTS Interpreter Development)
 
 set(PROJECT_CPPDEFINES -DBOOST_DISABLE_ASSERTS -DCMSSW_GIT_HASH="CMSSW_11_0_0" -DPROJECT_NAME="CMSSW" -DPROJECT_VERSION="CMSSW_11_0_0")
 set(PROJECT_CXXFLAGS -Wno-attributes)

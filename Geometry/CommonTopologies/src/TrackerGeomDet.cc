@@ -1,13 +1,9 @@
-#include "Geometry/CommonDetUnit/interface/MTDGeomDet.h"
+#include "Geometry/CommonTopologies/interface/TrackerGeomDet.h"
 #include "DataFormats/TrackingRecHit/interface/AlignmentPositionError.h"
 #include "DataFormats/GeometryCommonDetAlgo/interface/ErrorFrameTransformer.h"
 
-bool MTDGeomDet::setAlignmentPositionError(const AlignmentPositionError& ape) {
-  if (!theAlignmentPositionError) {
-    if (ape.valid())
-      theAlignmentPositionError = new AlignmentPositionError(ape);
-  } else
-    *theAlignmentPositionError = ape;
+bool TrackerGeomDet::setAlignmentPositionError(const AlignmentPositionError& ape) {
+  GeomDet::setAlignmentPositionError(ape);
 
   const GlobalErrorExtended& apeError = ape.globalError();
   GlobalError translatApe(

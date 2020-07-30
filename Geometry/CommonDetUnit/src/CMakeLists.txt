@@ -3,8 +3,4 @@ cms_add_library(GeometryCommonDetUnit TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				GeometryCommonTopologies
-				FWCoreUtilities
-				DataFormatsDetId
-				DataFormatsGeometrySurface
-				DataFormatsGeometryCommonDetAlgo
 			)

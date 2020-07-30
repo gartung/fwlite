@@ -8,7 +8,7 @@ cms_add_library(FireworksMuons TYPE LIBRARY
 				DataFormatsTrackReco
 				DataFormatsMuonReco
 				DataFormatsMuonDetId
-				Eve
-				Geom
-				GeomPainter
+				rooteve
+				rootgeom
+				rootgeompainter
 			)

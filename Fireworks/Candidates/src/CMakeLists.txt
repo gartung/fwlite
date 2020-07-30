@@ -7,5 +7,5 @@ cms_add_library(FireworksCandidates TYPE LIBRARY
 				DataFormatsPatCandidates
 				DataFormatsCandidate
 				boost_system
-				Eve
+				rooteve
 			)

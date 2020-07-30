@@ -3,7 +3,6 @@ cms_add_library(SimDataFormatsRPCDigiSimLink TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
-				SimDataFormatsTrackingHit
 				SimDataFormatsEncodedEventId
 				DataFormatsCommon
 				boost

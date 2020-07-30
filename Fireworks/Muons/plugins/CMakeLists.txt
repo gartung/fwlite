@@ -18,7 +18,7 @@ cms_add_library(FireworksMuonsPlugins TYPE PLUGINS
 				DataFormatsCSCRecHit
 				DataFormatsCSCDigi
 				rootinteractive
-				Eve
-				Geom
-				RGL
+				rooteve
+				rootgeom
+				rootrgl
 			)

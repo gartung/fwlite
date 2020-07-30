@@ -2,6 +2,14 @@ cms_add_library(FireworksTracksPlugins TYPE PLUGINS
 			SOURCES
 				*.cc
 			PUBLIC
+				DataFormatsTrackerRecHit2D
+				DataFormatsSiStripDetId
+				DataFormatsSiPixelDetId
+				DataFormatsMuonDetId
+				DataFormatsHcalDetId
+				DataFormatsGsfTrackReco
+				DataFormatsEcalDetId
+				DataFormatsCaloTowers
 				FireworksCalo
 				FireworksTracks
 				FireworksCore
@@ -18,7 +26,7 @@ cms_add_library(FireworksTracksPlugins TYPE PLUGINS
 				DataFormatsBeamSpot
 				rootinteractive
 				rootphysics
-				Eve
-				Geom
-				RGL
+				rooteve
+				rootgeom
+				rootrgl
 			)

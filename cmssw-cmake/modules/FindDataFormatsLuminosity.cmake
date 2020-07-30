@@ -1,7 +1,7 @@
 if(NOT DataFormatsLuminosity_FOUND)
   set(DataFormatsLuminosity_FOUND TRUE)
   mark_as_advanced(DataFormatsLuminosity_FOUND)
-cms_find_package(DataFormatsPatCandidates)
+cms_find_package(DataFormatsMath)
 cms_find_package(FWCoreUtilities)
 cms_find_package(DataFormatsCommon)
 list(APPEND LIBS DataFormatsLuminosity)

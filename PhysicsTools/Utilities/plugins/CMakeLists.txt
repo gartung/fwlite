@@ -3,6 +3,5 @@ cms_add_library(PhysicsToolsUtilitiesAuto TYPE PLUGINS
 				*.cc
 			PUBLIC
 				FWCoreParameterSet
-				FWCorePluginManager
 				FWCoreFramework
 			)

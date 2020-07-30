@@ -5,6 +5,6 @@ cms_add_library(FireworksElectrons TYPE LIBRARY
 				FireworksCore
 				DataFormatsEgammaReco
 				rootcore
-				Eve
-				Geom
+				rooteve
+				rootgeom
 			)

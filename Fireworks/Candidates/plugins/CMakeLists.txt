@@ -2,9 +2,10 @@ cms_add_library(FireworksCandidatesPlugins TYPE PLUGINS
 			SOURCES
 				*.cc
 			PUBLIC
+				FireworksCalo
 				FireworksCore
 				FireworksCandidates
 				DataFormatsCandidate
-				Eve
-				RGL
+				rooteve
+				boost_system
 			)

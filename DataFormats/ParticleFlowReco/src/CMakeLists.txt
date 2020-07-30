@@ -14,6 +14,7 @@ cms_add_library(DataFormatsParticleFlowReco TYPE LIBRARY
 				DataFormatsEgammaCandidates
 				DataFormatsCommon
 				DataFormatsCaloRecHit
+				GeometryCaloGeometry
 				rootcore
 				rootmath
 				vdt_headers

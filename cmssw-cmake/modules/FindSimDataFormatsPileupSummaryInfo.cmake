@@ -1,7 +1,6 @@
 if(NOT SimDataFormatsPileupSummaryInfo_FOUND)
   set(SimDataFormatsPileupSummaryInfo_FOUND TRUE)
   mark_as_advanced(SimDataFormatsPileupSummaryInfo_FOUND)
-cms_find_package(SimDataFormatsGeneratorProducts)
 cms_find_package(DataFormatsProvenance)
 cms_find_package(DataFormatsCommon)
 cms_find_package(DataFormatsMath)

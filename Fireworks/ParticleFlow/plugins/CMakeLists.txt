@@ -9,6 +9,6 @@ cms_add_library(FireworksParticleFlowPlugins TYPE PLUGINS
 				DataFormatsParticleFlowCandidate
 				DataFormatsJetReco
 				DataFormatsEcalRecHit
-				Eve
-				RGL
+				rooteve
+				rootrgl
 			)

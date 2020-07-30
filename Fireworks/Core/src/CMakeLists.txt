@@ -32,12 +32,12 @@ cms_add_library(FireworksCore TYPE LIBRARY
 				rootx11
 				sigcpp
 				rootged
-				Thread
-				Eve
-				Geom
-				GeomPainter
-				GuiHtml
-				RGL
-				GLEW
-				Gui
+				rootthread
+				rooteve
+				rootgeom
+				rootgeompainter
+				rootguihtml
+				rootrgl
+				rootglew
+				rootgui
 			)

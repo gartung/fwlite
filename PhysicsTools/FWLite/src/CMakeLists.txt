@@ -3,7 +3,8 @@ cms_add_library(PhysicsToolsFWLite TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
-				DataFormatsMuonReco
+				PhysicsToolsSelectorUtils
+				DataFormatsPatCandidates
 				DataFormatsFWLite
 				CommonToolsUtils
 				boost

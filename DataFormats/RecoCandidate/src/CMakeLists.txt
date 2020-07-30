@@ -6,6 +6,7 @@ cms_add_library(DataFormatsRecoCandidate TYPE LIBRARY
 				SimDataFormatsTrackingAnalysis
 				SimDataFormatsGeneratorProducts
 				DataFormatsHcalRecHit
+				DataFormatsGsfTrackReco
 				DataFormatsEgammaReco
 				DataFormatsCaloTowers
 				DataFormatsTrackReco

@@ -2,14 +2,14 @@ cms_add_binary(FWLiteHistograms TYPE BINARY
 			SOURCES
 				FWLiteHistograms.cc
 			PUBLIC
-				PhysicsToolsSelectorUtils
-				PhysicsToolsUtilities
 				PhysicsToolsFWLite
-				CommonToolsUtils
+				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
+				DataFormatsPatCandidates
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
+				CommonToolsUtils
 				root
 				boost
 			)
@@ -17,14 +17,14 @@ cms_add_binary(FWLiteLumiAccess TYPE BINARY
 			SOURCES
 				FWLiteLumiAccess.cc
 			PUBLIC
-				PhysicsToolsSelectorUtils
-				PhysicsToolsUtilities
 				PhysicsToolsFWLite
-				CommonToolsUtils
+				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
+				DataFormatsPatCandidates
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
+				CommonToolsUtils
 				root
 				boost
 			)
@@ -32,14 +32,14 @@ cms_add_binary(FWLiteWithPythonConfig TYPE BINARY
 			SOURCES
 				FWLiteWithPythonConfig.cc
 			PUBLIC
-				PhysicsToolsSelectorUtils
-				PhysicsToolsUtilities
 				PhysicsToolsFWLite
-				CommonToolsUtils
+				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
+				DataFormatsPatCandidates
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
+				CommonToolsUtils
 				root
 				boost
 			)
@@ -47,14 +47,14 @@ cms_add_binary(FWLiteWithSelectorUtils TYPE BINARY
 			SOURCES
 				FWLiteWithSelectorUtils.cc
 			PUBLIC
-				PhysicsToolsSelectorUtils
-				PhysicsToolsUtilities
 				PhysicsToolsFWLite
-				CommonToolsUtils
+				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
+				DataFormatsPatCandidates
 				DataFormatsLuminosity
 				DataFormatsFWLite
 				FWCoreFWLite
+				CommonToolsUtils
 				root
 				boost
 			)

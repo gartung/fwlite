@@ -7,5 +7,5 @@ cms_add_library(FireworksParticleFlow TYPE LIBRARY
 				FireworksCandidates
 				FireworksCore
 				DataFormatsParticleFlowCandidate
-				Eve
+				rooteve
 			)

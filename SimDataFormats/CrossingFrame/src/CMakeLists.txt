@@ -12,6 +12,5 @@ cms_add_library(SimDataFormatsCrossingFrame TYPE LIBRARY
 				FWCoreUtilities
 				FWCoreMessageLogger
 				DataFormatsProvenance
-				DataFormatsHcalDetId
 				DataFormatsCommon
 			)

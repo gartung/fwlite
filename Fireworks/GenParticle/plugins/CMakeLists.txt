@@ -6,6 +6,6 @@ cms_add_library(FireworksGenParticlePlugins TYPE PLUGINS
 				FireworksCandidates
 				DataFormatsHepMCCandidate
 				rootcore
-				EG
-				Eve
+				rooteg
+				rooteve
 			)

@@ -9,7 +9,7 @@ cms_add_library(FireworksSimDataPlugins TYPE PLUGINS
 				SimDataFormatsTrackingHit
 				SimDataFormatsTrack
 				FireworksCore
-				Eve
-				EG
-				Geom
+				rooteve
+				rooteg
+				rootgeom
 			)

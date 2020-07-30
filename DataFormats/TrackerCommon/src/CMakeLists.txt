@@ -5,6 +5,9 @@ cms_add_library(DataFormatsTrackerCommon TYPE LIBRARY
 			PUBLIC
 				FWCoreUtilities
 				FWCoreMessageLogger
+				DataFormatsSiStripDigi
+				DataFormatsSiPixelCluster
+				DataFormatsDetId
 				DataFormatsSiPixelDetId
 				DataFormatsSiStripCluster
 				DataFormatsCommon

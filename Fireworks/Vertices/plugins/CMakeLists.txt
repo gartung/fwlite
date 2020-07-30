@@ -8,7 +8,7 @@ cms_add_library(FireworksVerticesPlugins TYPE PLUGINS
 				DataFormatsVertexReco
 				DataFormatsBTauReco
 				roothistmatrix
-				Eve
-				Geom
-				Core
+				rooteve
+				rootgeom
+				rootcling
 			)

@@ -16,6 +16,6 @@ cms_add_library(FireworksCalo TYPE LIBRARY
 				boost_system
 				rootgpad
 				rootphysics
-				Eve
-				Geom
+				rooteve
+				rootgeom
 			)

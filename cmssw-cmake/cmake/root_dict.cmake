@@ -35,7 +35,6 @@ macro(add_rootdict_rules name)
                     COMMAND ${CMAKE_INSTALL_PREFIX}/bin/genreflex ${CMAKE_CURRENT_SOURCE_DIR}/${classes_h}
                     -s ${CMAKE_CURRENT_SOURCE_DIR}/${classes_xml}
                     -o ${classes_cc}
-                    --deep
                     --rootmap=${CMAKE_BINARY_DIR}/lib/${dict}.rootmap
                     --rootmap-lib=${CMAKE_BINARY_DIR}/lib/lib${name}.so
                     --library ${CMAKE_BINARY_DIR}/lib/lib${name}.so --multiDict

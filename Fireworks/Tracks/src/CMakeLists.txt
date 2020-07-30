@@ -17,5 +17,5 @@ cms_add_library(FireworksTracks TYPE LIBRARY
 				DataFormatsCaloTowers
 				rootmath
 				rootphysics
-				Eve
+				rooteve
 			)

@@ -1,6 +1,8 @@
 if(NOT DataFormatsHLTReco_FOUND)
   set(DataFormatsHLTReco_FOUND TRUE)
   mark_as_advanced(DataFormatsHLTReco_FOUND)
+cms_find_package(DataFormatsHcalIsolatedTrack)
+cms_find_package(DataFormatsTauReco)
 cms_find_package(DataFormatsMETReco)
 cms_find_package(DataFormatsJetReco)
 cms_find_package(DataFormatsEgammaCandidates)

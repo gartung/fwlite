@@ -7,9 +7,9 @@ cms_add_library(FireworksVertices TYPE LIBRARY
 				DataFormatsVertexReco
 				rootcore
 				opengl
-				Eve
-				Geom
-				Physics
-				RGL
-				Core
+				rooteve
+				rootgeom
+				rootphysics
+				rootrgl
+				rootcling
 			)

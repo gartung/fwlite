@@ -11,8 +11,7 @@ cms_add_library(FireworksElectronsPlugins TYPE PLUGINS
 				DataFormatsEgammaReco
 				DataFormatsEgammaCandidates
 				DataFormatsEcalDetId
-				rootinteractive
-				rootphysics
-				Eve
-				RGL
+				rootcore
+				rooteve
+				rootgeom
 			)

@@ -5,7 +5,6 @@ cms_add_library(PhysicsToolsSelectorUtils TYPE LIBRARY
 			PUBLIC
 				FWCoreUtilities
 				FWCoreParameterSet
-				FWCoreFWLite
 				FWCoreCommon
 				DataFormatsVertexReco
 				DataFormatsProvenance
@@ -16,7 +15,6 @@ cms_add_library(PhysicsToolsSelectorUtils TYPE LIBRARY
 				DataFormatsEgammaCandidates
 				DataFormatsPatCandidates
 				DataFormatsCandidate
-				DataFormatsMath
 				CommonToolsUtils
 				rootcore
 				root

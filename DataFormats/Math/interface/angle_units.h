@@ -5,11 +5,7 @@
 
 namespace angle_units {
 
-#ifdef __clang__
-  constexpr long double piRadians(M_PI);              // M_PIl is long double version of pi
-#else
   constexpr long double piRadians(M_PIl);              // M_PIl is long double version of pi
-#endif
   constexpr long double degPerRad = 180. / piRadians;  // Degrees per radian
 
   namespace operators {

@@ -4,6 +4,10 @@ cms_add_library(CommonToolsUtils TYPE LIBRARY
 			PUBLIC
 				FWCoreMessageLogger
 				FWCoreUtilities
+				FWCoreReflection
+				FWCoreParameterSet
+				DataFormatsMath
+				DataFormatsCommon
 				boost
 				roothistmatrix
 			)

@@ -1,6 +1,7 @@
 if(NOT FastSimDataFormatsExternal_FOUND)
   set(FastSimDataFormatsExternal_FOUND TRUE)
   mark_as_advanced(FastSimDataFormatsExternal_FOUND)
+cms_find_package(DataFormatsGeometryVector)
 cms_find_package(DataFormatsDetId)
 cms_find_package(DataFormatsGeometrySurface)
 cms_find_package(DataFormatsCommon)

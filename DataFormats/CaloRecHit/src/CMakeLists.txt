@@ -3,6 +3,7 @@ cms_add_library(DataFormatsCaloRecHit TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				eigen
 				DataFormatsDetId
 				DataFormatsMath
 				DataFormatsCommon

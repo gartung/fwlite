@@ -8,6 +8,7 @@ cms_add_library(DataFormatsTrackerCommon TYPE LIBRARY
 				DataFormatsSiStripDigi
 				DataFormatsSiPixelCluster
 				DataFormatsDetId
+				DataFormatsSiStripDetId
 				DataFormatsSiPixelDetId
 				DataFormatsSiStripCluster
 				DataFormatsCommon

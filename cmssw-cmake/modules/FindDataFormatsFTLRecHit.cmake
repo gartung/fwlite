@@ -1,6 +1,7 @@
 if(NOT DataFormatsFTLRecHit_FOUND)
   set(DataFormatsFTLRecHit_FOUND TRUE)
   mark_as_advanced(DataFormatsFTLRecHit_FOUND)
+cms_find_package(DataFormatsDetId)
 cms_find_package(DataFormatsTrackingRecHit)
 cms_find_package(DataFormatsForwardDetId)
 cms_find_package(DataFormatsCommon)

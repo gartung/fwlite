@@ -4,16 +4,23 @@ cms_add_library(DataFormatsTrackReco TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				FWCoreUtilities
-				DataFormatsTrackerCommon
-				DataFormatsTrackingRecHit
-				DataFormatsSiPixelCluster
-				DataFormatsSiStripDetId
-				DataFormatsSiPixelDetId
-				DataFormatsBeamSpot
-				DataFormatsMuonDetId
-				DataFormatsTrackCandidate
 				DataFormatsTrajectoryState
+				DataFormatsTrajectorySeed
+				DataFormatsTrackingRecHit
+				DataFormatsTrackerCommon
+				DataFormatsTrackCandidate
+				DataFormatsSiStripDetId
+				DataFormatsSiStripCluster
+				DataFormatsSiPixelDetId
+				DataFormatsSiPixelCluster
+				DataFormatsMuonDetId
+				DataFormatsMath
+				DataFormatsGeometryVector
+				DataFormatsForwardDetId
+				DataFormatsDetId
 				DataFormatsCommon
+				DataFormatsCandidate
+				DataFormatsBeamSpot
 				clhepheader
 				rootmath
 			)

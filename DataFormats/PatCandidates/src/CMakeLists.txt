@@ -6,11 +6,25 @@ cms_add_library(DataFormatsPatCandidates TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				FWCoreReflection
+				FWCoreParameterSet
+				FWCoreMessageLogger
+				DataFormatsVertexReco
+				DataFormatsSiStripDetId
+				DataFormatsSiPixelDetId
+				DataFormatsRecoCandidate
+				DataFormatsProvenance
+				DataFormatsMath
+				DataFormatsGsfTrackReco
+				DataFormatsGeometryCommonDetAlgo
+				DataFormatsEgammaReco
+				DataFormatsCLHEP
+				SimDataFormatsJetMatching
 				DataFormatsEcalRecHit
 				DataFormatsCaloTowers
 				DataFormatsHLTReco
 				DataFormatsL1Trigger
-				CondFormatsL1TObjects
+				DataFormatsL1GlobalTrigger
 				DataFormatsBTauReco
 				DataFormatsHepMCCandidate
 				DataFormatsTrackReco
@@ -21,7 +35,6 @@ cms_add_library(DataFormatsPatCandidates TYPE LIBRARY
 				DataFormatsTauReco
 				DataFormatsMuonReco
 				DataFormatsCandidate
-				DataFormatsStdDictionaries
 				DataFormatsCommon
 				FWCoreCommon
 				FWCoreUtilities

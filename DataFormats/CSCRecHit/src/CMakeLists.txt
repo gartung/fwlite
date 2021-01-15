@@ -4,7 +4,6 @@ cms_add_library(DataFormatsCSCRecHit TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				DataFormatsTrackingRecHit
-				DataFormatsGeometryVector
 				DataFormatsMuonDetId
 				DataFormatsCommon
 			)

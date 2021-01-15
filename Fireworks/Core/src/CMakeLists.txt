@@ -3,6 +3,11 @@ cms_add_library(FireworksCore TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				FWCoreReflection
+				FWCoreParameterSet
+				DataFormatsTrackerCommon
+				DataFormatsProvenance
+				DataFormatsBeamSpot
 				FireworksTableWidget
 				CalibTrackerStandaloneTrackerTopology
 				FWCoreUtilities
@@ -11,13 +16,10 @@ cms_add_library(FireworksCore TYPE LIBRARY
 				FWCoreCommon
 				DataFormatsTrackReco
 				DataFormatsScalers
-				DataFormatsSiPixelDetId
 				DataFormatsMuonDetId
 				DataFormatsMath
 				DataFormatsL1GlobalTrigger
 				DataFormatsFWLite
-				DataFormatsEcalRecHit
-				DataFormatsEcalDetId
 				DataFormatsDetId
 				DataFormatsCommon
 				DataFormatsCandidate
@@ -29,7 +31,6 @@ cms_add_library(FireworksCore TYPE LIBRARY
 				opengl
 				rootinteractive
 				rootgraphics
-				rootx11
 				sigcpp
 				rootged
 				rootthread
@@ -37,6 +38,7 @@ cms_add_library(FireworksCore TYPE LIBRARY
 				rootgeom
 				rootgeompainter
 				rootguihtml
+				rootx11
 				rootrgl
 				rootglew
 				rootgui

@@ -4,11 +4,11 @@ cms_add_library(FireworksCalo TYPE LIBRARY
 			PUBLIC
 				FireworksTracks
 				FireworksCore
+				DataFormatsTauReco
 				DataFormatsJetReco
 				DataFormatsFWLite
 				DataFormatsEgammaReco
 				DataFormatsEcalRecHit
-				DataFormatsForwardDetId
 				DataFormatsEcalDetId
 				DataFormatsDetId
 				DataFormatsCaloTowers

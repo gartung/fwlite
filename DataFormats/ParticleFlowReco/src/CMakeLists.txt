@@ -4,18 +4,23 @@ cms_add_library(DataFormatsParticleFlowReco TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				FWCoreMessageLogger
+				DataFormatsTrackingRecHit
+				DataFormatsMath
+				DataFormatsGsfTrackReco
+				DataFormatsGeometryVector
+				DataFormatsEgammaReco
+				DataFormatsEgammaCandidates
+				DataFormatsDetId
+				GeometryCaloGeometry
 				FWCoreUtilities
 				DataFormatsCandidate
 				DataFormatsVertexReco
 				DataFormatsTrajectorySeed
 				DataFormatsTrackReco
 				DataFormatsMuonReco
-				DataFormatsEgammaReco
-				DataFormatsEgammaCandidates
 				DataFormatsCommon
 				DataFormatsCaloRecHit
-				GeometryCaloGeometry
 				rootcore
 				rootmath
-				vdt_headers
 			)

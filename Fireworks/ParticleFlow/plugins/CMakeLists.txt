@@ -3,6 +3,7 @@ cms_add_library(FireworksParticleFlowPlugins TYPE PLUGINS
 				*.cc
 			PUBLIC
 				FireworksParticleFlow
+				FireworksCandidates
 				DataFormatsTrackReco
 				DataFormatsPatCandidates
 				DataFormatsParticleFlowReco

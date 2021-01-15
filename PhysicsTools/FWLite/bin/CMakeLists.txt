@@ -3,58 +3,46 @@ cms_add_binary(FWLiteHistograms TYPE BINARY
 				FWLiteHistograms.cc
 			PUBLIC
 				PhysicsToolsFWLite
-				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
-				DataFormatsPatCandidates
+				FWCoreFWLite
 				DataFormatsLuminosity
 				DataFormatsFWLite
-				FWCoreFWLite
-				CommonToolsUtils
-				root
 				boost
+				root
 			)
 cms_add_binary(FWLiteLumiAccess TYPE BINARY
 			SOURCES
 				FWLiteLumiAccess.cc
 			PUBLIC
 				PhysicsToolsFWLite
-				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
-				DataFormatsPatCandidates
+				FWCoreFWLite
 				DataFormatsLuminosity
 				DataFormatsFWLite
-				FWCoreFWLite
-				CommonToolsUtils
-				root
 				boost
+				root
 			)
 cms_add_binary(FWLiteWithPythonConfig TYPE BINARY
 			SOURCES
 				FWLiteWithPythonConfig.cc
 			PUBLIC
 				PhysicsToolsFWLite
-				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
-				DataFormatsPatCandidates
+				FWCoreFWLite
 				DataFormatsLuminosity
 				DataFormatsFWLite
-				FWCoreFWLite
-				CommonToolsUtils
-				root
 				boost
+				root
 			)
 cms_add_binary(FWLiteWithSelectorUtils TYPE BINARY
 			SOURCES
 				FWLiteWithSelectorUtils.cc
 			PUBLIC
 				PhysicsToolsFWLite
-				PhysicsToolsSelectorUtils
 				FWCoreParameterSetReader
-				DataFormatsPatCandidates
+				FWCoreFWLite
 				DataFormatsLuminosity
 				DataFormatsFWLite
-				FWCoreFWLite
-				CommonToolsUtils
-				root
 				boost
+				root
 			)

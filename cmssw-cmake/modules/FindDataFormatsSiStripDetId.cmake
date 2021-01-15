@@ -1,7 +1,6 @@
 if(NOT DataFormatsSiStripDetId_FOUND)
   set(DataFormatsSiStripDetId_FOUND TRUE)
   mark_as_advanced(DataFormatsSiStripDetId_FOUND)
-cms_find_package(DataFormatsTrackerCommon)
 cms_find_package(DataFormatsDetId)
 list(APPEND LIBS DataFormatsSiStripDetId)
 endif()

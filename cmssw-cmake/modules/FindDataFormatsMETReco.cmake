@@ -1,7 +1,6 @@
 if(NOT DataFormatsMETReco_FOUND)
   set(DataFormatsMETReco_FOUND TRUE)
   mark_as_advanced(DataFormatsMETReco_FOUND)
-cms_find_package(FWCoreUtilities)
 cms_find_package(DataFormatsHcalRecHit)
 cms_find_package(DataFormatsEcalRecHit)
 cms_find_package(DataFormatsJetReco)

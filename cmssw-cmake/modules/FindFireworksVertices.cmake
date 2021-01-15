@@ -1,8 +1,6 @@
 if(NOT FireworksVertices_FOUND)
   set(FireworksVertices_FOUND TRUE)
   mark_as_advanced(FireworksVertices_FOUND)
-cms_find_package(FireworksCore)
-cms_find_package(DataFormatsVertexReco)
 cms_find_package(rootcore)
 cms_find_package(opengl)
 cms_find_package(rooteve)

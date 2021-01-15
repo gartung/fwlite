@@ -3,9 +3,10 @@ cms_add_library(FWCoreUtilities TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				boost
-				boost_filesystem
 				boost_regex
 				libuuid
+				fmt
 				tbb
 				md5
+				stdcxx_fs
 			)

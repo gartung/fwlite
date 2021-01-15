@@ -6,6 +6,7 @@ cms_add_library(FWCoreMessageLogger TYPE LIBRARY
 				DataFormatsProvenance
 				FWCoreUtilities
 				boost
+				fmt
 				tinyxml2
 				tbb
 			)

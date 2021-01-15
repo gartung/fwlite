@@ -7,7 +7,6 @@ cms_add_library(FireworksTracks TYPE LIBRARY
 				DataFormatsTrackerRecHit2D
 				DataFormatsTrackReco
 				DataFormatsSiStripDetId
-				DataFormatsSiStripCluster
 				DataFormatsSiPixelDetId
 				DataFormatsSiPixelCluster
 				DataFormatsMuonDetId

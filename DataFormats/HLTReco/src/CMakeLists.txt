@@ -3,15 +3,14 @@ cms_add_library(DataFormatsHLTReco TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
-				DataFormatsHcalIsolatedTrack
 				DataFormatsTauReco
+				DataFormatsHcalIsolatedTrack
 				DataFormatsMETReco
 				DataFormatsJetReco
 				DataFormatsEgammaCandidates
 				DataFormatsRecoCandidate
 				DataFormatsL1Trigger
 				DataFormatsCandidate
-				DataFormatsCLHEP
 				DataFormatsCommon
 				FWCoreUtilities
 			)

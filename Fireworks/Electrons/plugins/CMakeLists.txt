@@ -10,8 +10,8 @@ cms_add_library(FireworksElectronsPlugins TYPE PLUGINS
 				DataFormatsGsfTrackReco
 				DataFormatsEgammaReco
 				DataFormatsEgammaCandidates
-				DataFormatsEcalDetId
-				rootcore
+				rootinteractive
+				rootphysics
 				rooteve
-				rootgeom
+				rootrgl
 			)

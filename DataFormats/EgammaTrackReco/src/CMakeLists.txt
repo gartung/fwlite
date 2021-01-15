@@ -3,6 +3,9 @@ cms_add_library(DataFormatsEgammaTrackReco TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
+				DataFormatsTrackingRecHit
+				DataFormatsTrackCandidate
+				DataFormatsCaloRecHit
 				DataFormatsEgammaReco
 				DataFormatsTrackReco
 				DataFormatsCommon

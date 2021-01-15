@@ -1,0 +1,7 @@
+if(NOT FMT_FOUND)
+	mark_as_advanced(FMT_FOUND)
+	set(FMT_FOUND TRUE)
+	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include)
+	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
+	list(APPEND LIBS fmt)
+endif()

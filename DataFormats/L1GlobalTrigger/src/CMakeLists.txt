@@ -6,7 +6,6 @@ cms_add_library(DataFormatsL1GlobalTrigger TYPE LIBRARY
 				FWCoreUtilities
 				FWCoreMessageLogger
 				DataFormatsL1GlobalMuonTrigger
-				DataFormatsStdDictionaries
 				DataFormatsProvenance
 				DataFormatsCommon
 				boost

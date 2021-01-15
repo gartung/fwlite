@@ -4,13 +4,10 @@ cms_add_binary(calculateIdMD5 TYPE BINARY
 			PUBLIC
 				PhysicsToolsSelectorUtils
 				PhysicsToolsFWLite
-				PhysicsToolsUtilities
-				CommonToolsUtils
 				FWCoreParameterSetReader
 				FWCoreParameterSet
 				FWCoreFWLite
 				DataFormatsFWLite
-				DataFormatsPatCandidates
-				root
 				boost
+				root
 			)

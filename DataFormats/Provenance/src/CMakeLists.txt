@@ -5,7 +5,6 @@ cms_add_library(DataFormatsProvenance TYPE LIBRARY
 			PUBLIC
 				FWCoreReflection
 				FWCoreUtilities
-				boost
 				rootcore
 				tbb
 			)

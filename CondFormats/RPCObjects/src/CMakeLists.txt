@@ -4,6 +4,7 @@ cms_add_library(CondFormatsRPCObjects TYPE LIBRARY
 				*.cc *.cxx *.f *.f77
 			PUBLIC
 				CondFormatsSerialization
+				CondFormatsL1TObjects
 				FWCoreUtilities
 				FWCoreMessageLogger
 				DataFormatsMuonDetId

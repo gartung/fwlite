@@ -4,5 +4,4 @@ cms_add_library(FWCoreParameterSetReader TYPE LIBRARY
 			PUBLIC
 				FWCorePythonParameterSet
 				FWCoreParameterSet
-				py2_pybind11
 			)

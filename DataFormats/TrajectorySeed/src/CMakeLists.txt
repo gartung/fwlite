@@ -3,11 +3,8 @@ cms_add_library(DataFormatsTrajectorySeed TYPE LIBRARY
 			SOURCES
 				*.cc *.cxx *.f *.f77
 			PUBLIC
-				GeometryCommonDetUnit
 				FWCoreUtilities
 				DataFormatsTrackingRecHit
-				DataFormatsSiPixelDetId
-				DataFormatsSiStripDetId
 				DataFormatsTrajectoryState
 				DataFormatsCLHEP
 				DataFormatsCommon

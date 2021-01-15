@@ -1,6 +1,7 @@
 if(NOT SimDataFormatsRPCDigiSimLink_FOUND)
   set(SimDataFormatsRPCDigiSimLink_FOUND TRUE)
   mark_as_advanced(SimDataFormatsRPCDigiSimLink_FOUND)
+cms_find_package(DataFormatsGeometryVector)
 cms_find_package(SimDataFormatsEncodedEventId)
 cms_find_package(DataFormatsCommon)
 cms_find_package(boost)

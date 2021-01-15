@@ -1,7 +1,6 @@
 if(NOT DataFormatsHcalIsolatedTrack_FOUND)
   set(DataFormatsHcalIsolatedTrack_FOUND TRUE)
   mark_as_advanced(DataFormatsHcalIsolatedTrack_FOUND)
-cms_find_package(FWCoreMessageLogger)
 cms_find_package(DataFormatsL1Trigger)
 cms_find_package(DataFormatsTrackReco)
 cms_find_package(DataFormatsRecoCandidate)

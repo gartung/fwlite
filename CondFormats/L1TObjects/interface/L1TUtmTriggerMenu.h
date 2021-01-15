@@ -89,6 +89,12 @@ public:
      */
   const std::string& getFirmwareUuid() const { return uuid_firmware_; };
 
+  /** gets the hash of the L1 firmware 
+     *
+     * @return the hash identifying the L1 firmware 
+     */
+  const unsigned long getFirmwareUuidHashed() const;
+
   /** get scale set name
      *
      * @return scale set name
@@ -142,6 +148,12 @@ public:
      * @param value [in] number of uGT boards
      */
   void setNmodules(const unsigned int value) { n_modules_ = value; };
+
+  /** hash computation function
+     *
+     * @return computed hash
+     */
+  static unsigned long murmurHashNeutral2(const void* key, int len, unsigned int seed);
 
 protected:
   std::map<std::string, L1TUtmAlgorithm> algorithm_map_; /**< map of algorithm <algorithm name, L1TUtmAlgorithm> */

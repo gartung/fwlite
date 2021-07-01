@@ -1,7 +1,0 @@
-if(NOT SimDataFormatsEncodedEventId_FOUND)
-  set(SimDataFormatsEncodedEventId_FOUND TRUE)
-  mark_as_advanced(SimDataFormatsEncodedEventId_FOUND)
-cms_find_package(boost)
-cms_find_package(rootcore)
-list(APPEND LIBS SimDataFormatsEncodedEventId)
-endif()

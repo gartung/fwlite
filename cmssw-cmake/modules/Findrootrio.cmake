@@ -1,6 +1,0 @@
-if(NOT ROOTRIO_FOUND)
-	mark_as_advanced(ROOTRIO_FOUND)
-	set(ROOTRIO_FOUND TRUE)
-	cms_find_package(rootcling)
-	list(APPEND LIBS RIO)
-endif()

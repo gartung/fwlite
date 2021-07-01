@@ -1,8 +1,0 @@
-if(NOT LIBXML2_FOUND)
-	mark_as_advanced(LIBXML2_FOUND)
-	set(LIBXML2_FOUND TRUE)
-	cms_find_package(root_cxxdefaults)
-	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include/libxml2)
-	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
-	list(APPEND LIBS xml2)
-endif()

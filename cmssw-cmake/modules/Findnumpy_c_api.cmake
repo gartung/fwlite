@@ -1,8 +1,0 @@
-if(NOT NUMPY_C_API_FOUND)
-	mark_as_advanced(NUMPY_C_API_FOUND)
-	set(NUMPY_C_API_FOUND TRUE)
-	cms_find_package(root_cxxdefaults)
-	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/c-api/core/include)
-	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
-	list(APPEND LIBS npymath)
-endif()

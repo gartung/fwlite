@@ -1,7 +1,0 @@
-if(NOT FWCoreConcurrency_FOUND)
-  set(FWCoreConcurrency_FOUND TRUE)
-  mark_as_advanced(FWCoreConcurrency_FOUND)
-cms_find_package(FWCoreUtilities)
-cms_find_package(tbb)
-list(APPEND LIBS FWCoreConcurrency)
-endif()

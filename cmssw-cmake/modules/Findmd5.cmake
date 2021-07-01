@@ -1,7 +1,0 @@
-if(NOT MD5_FOUND)
-	mark_as_advanced(MD5_FOUND)
-	set(MD5_FOUND TRUE)
-	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include)
-	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
-	list(APPEND LIBS cms-md5)
-endif()

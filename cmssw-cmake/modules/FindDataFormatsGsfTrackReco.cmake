@@ -1,7 +1,0 @@
-if(NOT DataFormatsGsfTrackReco_FOUND)
-  set(DataFormatsGsfTrackReco_FOUND TRUE)
-  mark_as_advanced(DataFormatsGsfTrackReco_FOUND)
-cms_find_package(DataFormatsTrackReco)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsGsfTrackReco)
-endif()

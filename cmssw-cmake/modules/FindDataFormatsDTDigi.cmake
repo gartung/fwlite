@@ -1,8 +1,0 @@
-if(NOT DataFormatsDTDigi_FOUND)
-  set(DataFormatsDTDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsDTDigi_FOUND)
-cms_find_package(DataFormatsFEDRawData)
-cms_find_package(DataFormatsMuonDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsDTDigi)
-endif()

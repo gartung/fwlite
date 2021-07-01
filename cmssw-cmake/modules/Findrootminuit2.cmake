@@ -1,6 +1,0 @@
-if(NOT ROOTMINUIT2_FOUND)
-	mark_as_advanced(ROOTMINUIT2_FOUND)
-	set(ROOTMINUIT2_FOUND TRUE)
-	cms_find_package(rootgpad)
-	list(APPEND LIBS Minuit2)
-endif()

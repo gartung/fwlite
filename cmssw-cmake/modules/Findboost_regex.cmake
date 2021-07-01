@@ -1,6 +1,0 @@
-if(NOT BOOST_REGEX_FOUND)
-	mark_as_advanced(BOOST_REGEX_FOUND)
-	set(BOOST_REGEX_FOUND TRUE)
-	cms_find_package(boost)
-	list(APPEND LIBS boost_regex)
-endif()

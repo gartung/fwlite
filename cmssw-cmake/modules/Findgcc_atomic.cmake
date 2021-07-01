@@ -1,5 +1,0 @@
-if(NOT GCC_ATOMIC_FOUND)
-	mark_as_advanced(GCC_ATOMIC_FOUND)
-	set(GCC_ATOMIC_FOUND TRUE)
-	list(APPEND LIBS atomic)
-endif()

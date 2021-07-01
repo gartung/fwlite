@@ -1,7 +1,0 @@
-if(NOT DataFormatsEcalDigi_FOUND)
-  set(DataFormatsEcalDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsEcalDigi_FOUND)
-cms_find_package(DataFormatsEcalDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsEcalDigi)
-endif()

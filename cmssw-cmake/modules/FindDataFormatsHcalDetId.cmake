@@ -1,7 +1,0 @@
-if(NOT DataFormatsHcalDetId_FOUND)
-  set(DataFormatsHcalDetId_FOUND TRUE)
-  mark_as_advanced(DataFormatsHcalDetId_FOUND)
-cms_find_package(FWCoreUtilities)
-cms_find_package(DataFormatsDetId)
-list(APPEND LIBS DataFormatsHcalDetId)
-endif()

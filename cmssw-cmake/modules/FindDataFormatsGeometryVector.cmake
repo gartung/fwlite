@@ -1,7 +1,0 @@
-if(NOT DataFormatsGeometryVector_FOUND)
-  set(DataFormatsGeometryVector_FOUND TRUE)
-  mark_as_advanced(DataFormatsGeometryVector_FOUND)
-cms_find_package(DataFormatsMath)
-cms_find_package(rootmath)
-list(APPEND LIBS DataFormatsGeometryVector)
-endif()

@@ -1,8 +1,0 @@
-if(NOT SimDataFormatsRandomEngine_FOUND)
-  set(SimDataFormatsRandomEngine_FOUND TRUE)
-  mark_as_advanced(SimDataFormatsRandomEngine_FOUND)
-cms_find_package(FWCoreUtilities)
-cms_find_package(DataFormatsCommon)
-cms_find_package(boost)
-list(APPEND LIBS SimDataFormatsRandomEngine)
-endif()

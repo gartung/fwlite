@@ -1,5 +1,0 @@
-if(NOT LLVM_CCOMPILER_FOUND)
-	mark_as_advanced(LLVM_CCOMPILER_FOUND)
-	set(LLVM_CCOMPILER_FOUND TRUE)
-	cms_find_package(gcc_ccompiler)
-endif()

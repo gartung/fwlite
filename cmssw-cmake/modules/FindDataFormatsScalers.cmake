@@ -1,6 +1,0 @@
-if(NOT DataFormatsScalers_FOUND)
-  set(DataFormatsScalers_FOUND TRUE)
-  mark_as_advanced(DataFormatsScalers_FOUND)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsScalers)
-endif()

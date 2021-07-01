@@ -1,6 +1,0 @@
-if(NOT ROOTPY_FOUND)
-	mark_as_advanced(ROOTPY_FOUND)
-	set(ROOTPY_FOUND TRUE)
-	cms_find_package(rootgraphics)
-	list(APPEND LIBS PyROOT)
-endif()

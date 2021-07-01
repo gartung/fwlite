@@ -1,8 +1,0 @@
-if(NOT ROOTCORE_FOUND)
-	mark_as_advanced(ROOTCORE_FOUND)
-	set(ROOTCORE_FOUND TRUE)
-	cms_find_package(rootmathcore)
-	cms_find_package(rootthread)
-	list(APPEND LIBS Tree)
-	list(APPEND LIBS Net)
-endif()

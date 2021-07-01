@@ -1,7 +1,0 @@
-if(NOT CLHEP_FOUND)
-	mark_as_advanced(CLHEP_FOUND)
-	set(CLHEP_FOUND TRUE)
-	cms_find_package(clhepheader)
-	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
-	list(APPEND LIBS CLHEP)
-endif()

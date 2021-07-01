@@ -1,4 +1,0 @@
-if(NOT PYTHON_PATHS_FOUND)
-	mark_as_advanced(PYTHON_PATHS_FOUND)
-	set(PYTHON_PATHS_FOUND TRUE)
-endif()

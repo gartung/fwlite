@@ -1,7 +1,0 @@
-if(NOT DataFormatsSiPixelDigi_FOUND)
-  set(DataFormatsSiPixelDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsSiPixelDigi_FOUND)
-cms_find_package(DataFormatsSiPixelDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsSiPixelDigi)
-endif()

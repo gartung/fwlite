@@ -1,7 +1,0 @@
-if(NOT DataFormatsL1GlobalMuonTrigger_FOUND)
-  set(DataFormatsL1GlobalMuonTrigger_FOUND TRUE)
-  mark_as_advanced(DataFormatsL1GlobalMuonTrigger_FOUND)
-cms_find_package(FWCoreMessageLogger)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsL1GlobalMuonTrigger)
-endif()

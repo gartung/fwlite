@@ -1,8 +1,0 @@
-if(NOT DataFormatsEcalDetId_FOUND)
-  set(DataFormatsEcalDetId_FOUND TRUE)
-  mark_as_advanced(DataFormatsEcalDetId_FOUND)
-cms_find_package(FWCoreUtilities)
-cms_find_package(DataFormatsDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsEcalDetId)
-endif()

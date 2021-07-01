@@ -1,7 +1,0 @@
-if(NOT ROOTGEOMPAINTER_FOUND)
-	mark_as_advanced(ROOTGEOMPAINTER_FOUND)
-	set(ROOTGEOMPAINTER_FOUND TRUE)
-	cms_find_package(rootgeom)
-	cms_find_package(rootgraphics)
-	list(APPEND LIBS GeomPainter)
-endif()

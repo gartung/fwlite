@@ -1,8 +1,0 @@
-if(NOT DataFormatsCSCDigi_FOUND)
-  set(DataFormatsCSCDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsCSCDigi_FOUND)
-cms_find_package(DataFormatsGEMDigi)
-cms_find_package(DataFormatsMuonDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsCSCDigi)
-endif()

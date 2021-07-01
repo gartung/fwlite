@@ -1,7 +1,0 @@
-if(NOT PhysicsToolsUtilitiesAuto_FOUND)
-  set(PhysicsToolsUtilitiesAuto_FOUND TRUE)
-  mark_as_advanced(PhysicsToolsUtilitiesAuto_FOUND)
-cms_find_package(FWCoreParameterSet)
-cms_find_package(FWCoreFramework)
-list(APPEND LIBS PhysicsToolsUtilitiesAuto)
-endif()

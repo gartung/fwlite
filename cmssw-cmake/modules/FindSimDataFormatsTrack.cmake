@@ -1,8 +1,0 @@
-if(NOT SimDataFormatsTrack_FOUND)
-  set(SimDataFormatsTrack_FOUND TRUE)
-  mark_as_advanced(SimDataFormatsTrack_FOUND)
-cms_find_package(SimDataFormatsEncodedEventId)
-cms_find_package(DataFormatsMath)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS SimDataFormatsTrack)
-endif()

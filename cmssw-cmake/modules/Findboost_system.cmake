@@ -1,6 +1,0 @@
-if(NOT BOOST_SYSTEM_FOUND)
-	mark_as_advanced(BOOST_SYSTEM_FOUND)
-	set(BOOST_SYSTEM_FOUND TRUE)
-	cms_find_package(boost)
-	list(APPEND LIBS boost_system)
-endif()

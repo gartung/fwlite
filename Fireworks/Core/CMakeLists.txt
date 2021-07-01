@@ -1,2 +1,280 @@
-get_filename_component(CMS_PACKAGE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
-process_subdirs(src bin )
+add_subdirectory(bin)
+include_directories(${CMAKE_SOURCE_DIR}
+${Boost_INCLUDE_DIR}
+${Boost_INCLUDE_DIR}/python
+${CLHEP_INCLUDE_DIR}
+${EIGEN_INCLUDE_DIR}/eigen3
+${FMT_INCLUDE_DIR}
+${GSL_INCLUDE_DIR}
+${MD5_INCLUDE_DIR}
+${OPENGL_INCLUDE_DIR}
+${Python_INCLUDE_DIR}
+${ROOT_INCLUDE_DIR}
+${TBB_INCLUDE_DIRS}
+${TINYXML2_INCLUDE_DIR}
+${UUID_INCLUDE_DIR}
+${VDT_INCLUDE_DIR}
+${SIGCPP_INCLUDE_DIR}/sigc++-2.0
+${SIGCPP_INCLUDE_DIR}/../lib/sigc++-2.0/include
+/usr/include
+)
+
+cms_rootdict(FireworksCore src/classes.h src/classes_def.xml)
+
+add_rootdict_rules(FireworksCore)
+
+add_library(FireworksCore SHARED ${FireworksCore_EXTRA_SOURCES}
+  src/ActionsList.cc
+  src/BuilderUtils.cc
+  src/CSGAction.cc
+  src/CSGActionSupervisor.cc
+  src/CSGConnector.cc
+  src/CSGContinuousAction.cc
+  src/CmsAnnotation.cc
+  src/CmsShowCommon.cc
+  src/CmsShowCommonPopup.cc
+  src/CmsShowEDI.cc
+  src/CmsShowHelpPopup.cc
+  src/CmsShowMain.cc
+  src/CmsShowMainBase.cc
+  src/CmsShowMainFrame.cc
+  src/CmsShowModelPopup.cc
+  src/CmsShowNavigator.cc
+  src/CmsShowSearchFiles.cc
+  src/CmsShowTaskExecutor.cc
+  src/CmsShowTaskExecutorBase.cc
+  src/CmsShowTaskTimer.cc
+  src/CmsShowViewPopup.cc
+  src/Context.cc
+  src/FW3DView.cc
+  src/FW3DViewBase.cc
+  src/FW3DViewDistanceMeasureTool.cc
+  src/FW3DViewGeometry.cc
+  src/FWBeamSpot.cc
+  src/FWBoolParameterSetter.cc
+  src/FWBoxIconBase.cc
+  src/FWBoxIconButton.cc
+  src/FWCheckBoxIcon.cc
+  src/FWCollectionSummaryModelCellRenderer.cc
+  src/FWCollectionSummaryTableManager.cc
+  src/FWCollectionSummaryWidget.cc
+  src/FWColorBoxIcon.cc
+  src/FWColorManager.cc
+  src/FWColorSelect.cc
+  src/FWCompactVerticalLayout.cc
+  src/FWCompositeParameter.cc
+  src/FWConfigurable.cc
+  src/FWConfigurableParameterizable.cc
+  src/FWConfiguration.cc
+  src/FWConfigurationManager.cc
+  src/FWCustomIconsButton.cc
+  src/FWDetailViewBase.cc
+  src/FWDetailViewFactory.cc
+  src/FWDetailViewManager.cc
+  src/FWDialogBuilder.cc
+  src/FWDigitSetProxyBuilder.cc
+  src/FWDisplayProperties.cc
+  src/FWDoubleParameterSetter.cc
+  src/FWEDProductRepresentationChecker.cc
+  src/FWEnumParameterSetter.cc
+  src/FWEveDetectorGeo.cc
+  src/FWEveDigitSetScalableMarker.cc
+  src/FWEveLegoView.cc
+  src/FWEveOverlap.cc
+  src/FWEveView.cc
+  src/FWEveViewManager.cc
+  src/FWEventAnnotation.cc
+  src/FWEventItem.cc
+  src/FWEventItemsManager.cc
+  src/FWExpressionEvaluator.cc
+  src/FWExpressionValidator.cc
+  src/FWFileEntry.cc
+  src/FWFromEveSelectorBase.cc
+  src/FWGLEventHandler.cc
+  src/FWGUIEventDataAdder.cc
+  src/FWGUIEventFilter.cc
+  src/FWGUIEventSelector.cc
+  src/FWGUIManager.cc
+  src/FWGUISubviewArea.cc
+  src/FWGUIValidatingTextEntry.cc
+  src/FWGenericHandle.cc
+  src/FWGeoTopNode.cc
+  src/FWGeoTopNodeGL.cc
+  src/FWGeoTopNodeScene.cc
+  src/FWGeometry.cc
+  src/FWGeometryTableManager.cc
+  src/FWGeometryTableManagerBase.cc
+  src/FWGeometryTableView.cc
+  src/FWGeometryTableViewBase.cc
+  src/FWGeometryTableViewManager.cc
+  src/FWGlimpseView.cc
+  src/FWHFView.cc
+  src/FWHLTTriggerTableView.cc
+  src/FWHLTValidator.cc
+  src/FWISpyView.cc
+  src/FWIntValueListener.cc
+  src/FWIntValueListenerBase.cc
+  src/FWInteractionList.cc
+  src/FWInvMassDialog.cc
+  src/FWItemAccessorBase.cc
+  src/FWItemAccessorFactory.cc
+  src/FWItemAccessorRegistry.cc
+  src/FWItemRandomAccessor.cc
+  src/FWItemSingleAccessor.cc
+  src/FWItemTVirtualCollectionProxyAccessor.cc
+  src/FWItemValueGetter.cc
+  src/FWJobMetadataManager.cc
+  src/FWL1TriggerTableView.cc
+  src/FWLegoViewBase.cc
+  src/FWLiteJobMetadataManager.cc
+  src/FWLongParameterSetter.cc
+  src/FWMagField.cc
+  src/FWModelChangeManager.cc
+  src/FWModelContextMenuHandler.cc
+  src/FWModelExpressionSelector.cc
+  src/FWModelFilter.cc
+  src/FWModelId.cc
+  src/FWModelIdFromEveSelector.cc
+  src/FWNavigatorBase.cc
+  src/FWNumberEntry.cc
+  src/FWOverlapTableManager.cc
+  src/FWOverlapTableView.cc
+  src/FWParameterBase.cc
+  src/FWParameterSetterBase.cc
+  src/FWParameterSetterEditorBase.cc
+  src/FWParameterizable.cc
+  src/FWPartialConfig.cc
+  src/FWPhysicsObjectDesc.cc
+  src/FWPopupMenu.cc
+  src/FWProxyBuilderBase.cc
+  src/FWProxyBuilderConfiguration.cc
+  src/FWProxyBuilderFactory.cc
+  src/FWRPZView.cc
+  src/FWRPZViewGeometry.cc
+  src/FWRepresentationCheckerBase.cc
+  src/FWSelectionManager.cc
+  src/FWSimpleProxyBuilder.cc
+  src/FWSimpleProxyHelper.cc
+  src/FWSimpleRepresentationChecker.cc
+  src/FWStringParameterSetter.cc
+  src/FWSummaryManager.cc
+  src/FWTEveViewer.cc
+  src/FWTEventList.cc
+  src/FWTGLViewer.cc
+  src/FWTSelectorToEventList.cc
+  src/FWTTreeCache.cc
+  src/FWTableView.cc
+  src/FWTableViewManager.cc
+  src/FWTableViewTableManager.cc
+  src/FWTextProjected.cc
+  src/FWTriggerTableView.cc
+  src/FWTriggerTableViewManager.cc
+  src/FWTriggerTableViewTableManager.cc
+  src/FWTypeToRepresentations.cc
+  src/FWViewBase.cc
+  src/FWViewContext.cc
+  src/FWViewContextMenuHandlerBase.cc
+  src/FWViewContextMenuHandlerGL.cc
+  src/FWViewEnergyScale.cc
+  src/FWViewEnergyScaleEditor.cc
+  src/FWViewGeometryList.cc
+  src/FWViewManagerBase.cc
+  src/FWViewManagerManager.cc
+  src/FWViewType.cc
+  src/RootGuiUtils.cc
+  src/SimpleSAXParser.cc
+  src/TEveElementIter.cc
+  src/TRootXTReq.cc
+  src/expressionFormatHelpers.cc
+  src/fw3dlego_xbins.cc
+  src/fwLog.cc
+  src/fwPaletteExtra.cc
+  src/fwPaths.cc
+)
+
+set_target_properties(FireworksCore PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+add_dependencies( ALL_LIBS FireworksCore)
+
+target_include_directories(FireworksCore PRIVATE ${CMAKE_SOURCE_DIR})
+
+target_include_directories(FireworksCore PUBLIC
+${Boost_INCLUDE_DIR}
+${Boost_INCLUDE_DIR}/python
+${CLHEP_INCLUDE_DIR}
+${EIGEN_INCLUDE_DIR}/eigen3
+${FMT_INCLUDE_DIR}
+${GSL_INCLUDE_DIR}
+${MD5_INCLUDE_DIR}
+${OPENGL_INCLUDE_DIR}
+${Python_INCLUDE_DIR}
+${ROOT_INCLUDE_DIR}
+${TBB_INCLUDE_DIRS}
+${TINYXML2_INCLUDE_DIR}
+${UUID_INCLUDE_DIR}
+${VDT_INCLUDE_DIR}
+${SIGCPP_INCLUDE_DIR}/sigc++-2.0
+${SIGCPP_INCLUDE_DIR}/../lib/sigc++-2.0/include
+/usr/include
+)
+
+target_link_libraries(FireworksCore PUBLIC
+${SIGCPP_LIBRARY}
+${OPENGL_gl_LIBRARY}
+${OPENGL_glu_LIBRARY}
+Boost::program_options
+Boost::regex
+Boost::system
+CalibTrackerStandaloneTrackerTopology
+CommonToolsUtils
+DataFormatsBeamSpot
+DataFormatsCandidate
+DataFormatsCommon
+DataFormatsDetId
+DataFormatsFWLite
+DataFormatsL1GlobalTrigger
+DataFormatsMath
+DataFormatsMuonDetId
+DataFormatsProvenance
+DataFormatsScalers
+DataFormatsTrackReco
+DataFormatsTrackerCommon
+FWCoreCommon
+FWCoreFWLite
+FWCoreParameterSet
+FWCorePluginManager
+FWCoreReflection
+FWCoreUtilities
+FireworksTableWidget
+ROOT::Core
+ROOT::Eve
+ROOT::Geom
+ROOT::GeomPainter
+ROOT::Gpad
+ROOT::Graf
+ROOT::Graf3d
+ROOT::Gui
+ROOT::GuiHtml
+ROOT::Hist
+ROOT::MathCore
+ROOT::Matrix
+ROOT::Net
+ROOT::Postscript
+ROOT::RGL
+ROOT::RIO
+ROOT::Rint
+ROOT::Thread
+ROOT::Tree
+ROOT::TreePlayer
+${JPEG_LIBRARY_RELEASE}
+${PNG_LIBRARY_RELEASE}
+${GLEW_SHARED_LIBRARY_RELEASE}
+)
+
+
+add_python_rules(Fireworks/Core)
+
+add_script_rules(Fireworks/Core)
+
+install( TARGETS FireworksCore DESTINATION ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR} EXPORT stitched::)
+

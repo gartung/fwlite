@@ -1,6 +1,0 @@
-if(NOT CLHEPHEADER_FOUND)
-	mark_as_advanced(CLHEPHEADER_FOUND)
-	set(CLHEPHEADER_FOUND TRUE)
-	cms_find_package(root_cxxdefaults)
-	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include)
-endif()

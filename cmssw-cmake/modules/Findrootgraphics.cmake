@@ -1,8 +1,0 @@
-if(NOT ROOTGRAPHICS_FOUND)
-	mark_as_advanced(ROOTGRAPHICS_FOUND)
-	set(ROOTGRAPHICS_FOUND TRUE)
-	cms_find_package(rootgpad)
-	list(APPEND LIBS TreePlayer)
-	list(APPEND LIBS Graf3d)
-	list(APPEND LIBS Postscript)
-endif()

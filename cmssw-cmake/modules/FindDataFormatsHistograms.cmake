@@ -1,7 +1,0 @@
-if(NOT DataFormatsHistograms_FOUND)
-  set(DataFormatsHistograms_FOUND TRUE)
-  mark_as_advanced(DataFormatsHistograms_FOUND)
-cms_find_package(DataFormatsCommon)
-cms_find_package(roothistmatrix)
-list(APPEND LIBS DataFormatsHistograms)
-endif()

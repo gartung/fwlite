@@ -1,7 +1,0 @@
-if(NOT VDT_FOUND)
-	mark_as_advanced(VDT_FOUND)
-	set(VDT_FOUND TRUE)
-	cms_find_package(vdt_headers)
-	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
-	list(APPEND LIBS vdt)
-endif()

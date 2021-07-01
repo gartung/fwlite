@@ -1,5 +1,0 @@
-if(NOT BOOST_SIGNALS_FOUND)
-	mark_as_advanced(BOOST_SIGNALS_FOUND)
-	set(BOOST_SIGNALS_FOUND TRUE)
-	cms_find_package(boost)
-endif()

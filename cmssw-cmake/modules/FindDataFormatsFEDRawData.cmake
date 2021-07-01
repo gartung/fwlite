@@ -1,7 +1,0 @@
-if(NOT DataFormatsFEDRawData_FOUND)
-  set(DataFormatsFEDRawData_FOUND TRUE)
-  mark_as_advanced(DataFormatsFEDRawData_FOUND)
-cms_find_package(FWCoreUtilities)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsFEDRawData)
-endif()

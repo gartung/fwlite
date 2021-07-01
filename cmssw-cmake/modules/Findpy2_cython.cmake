@@ -1,4 +1,0 @@
-if(NOT PY2_CYTHON_FOUND)
-	mark_as_advanced(PY2_CYTHON_FOUND)
-	set(PY2_CYTHON_FOUND TRUE)
-endif()

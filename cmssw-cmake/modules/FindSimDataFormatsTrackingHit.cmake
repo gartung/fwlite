@@ -1,8 +1,0 @@
-if(NOT SimDataFormatsTrackingHit_FOUND)
-  set(SimDataFormatsTrackingHit_FOUND TRUE)
-  mark_as_advanced(SimDataFormatsTrackingHit_FOUND)
-cms_find_package(SimDataFormatsEncodedEventId)
-cms_find_package(DataFormatsGeometryVector)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS SimDataFormatsTrackingHit)
-endif()

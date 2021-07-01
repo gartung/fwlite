@@ -1,6 +1,0 @@
-if(NOT DataFormatsSiStripDigi_FOUND)
-  set(DataFormatsSiStripDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsSiStripDigi_FOUND)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsSiStripDigi)
-endif()

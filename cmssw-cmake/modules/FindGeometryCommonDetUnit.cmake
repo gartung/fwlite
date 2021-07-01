@@ -1,6 +1,0 @@
-if(NOT GeometryCommonDetUnit_FOUND)
-  set(GeometryCommonDetUnit_FOUND TRUE)
-  mark_as_advanced(GeometryCommonDetUnit_FOUND)
-cms_find_package(GeometryCommonTopologies)
-list(APPEND LIBS GeometryCommonDetUnit)
-endif()

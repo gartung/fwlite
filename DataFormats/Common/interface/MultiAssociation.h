@@ -51,9 +51,7 @@
 #include <vector>
 #include <map>
 #include <memory>
-define BOOST_ALLOW_DEPRECATED_HEADERS
 #include <boost/range.hpp>
-undef BOOST_ALLOW_DEPRECATED_HEADERS
 #include "DataFormats/Common/interface/CMS_CLASS_VERSION.h"
 #include "DataFormats/Provenance/interface/ProductID.h"
 

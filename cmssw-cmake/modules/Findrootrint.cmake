@@ -1,6 +1,0 @@
-if(NOT ROOTRINT_FOUND)
-	mark_as_advanced(ROOTRINT_FOUND)
-	set(ROOTRINT_FOUND TRUE)
-	cms_find_package(rootcling)
-	list(APPEND LIBS Rint)
-endif()

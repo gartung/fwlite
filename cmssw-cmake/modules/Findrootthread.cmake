@@ -1,6 +1,0 @@
-if(NOT ROOTTHREAD_FOUND)
-	mark_as_advanced(ROOTTHREAD_FOUND)
-	set(ROOTTHREAD_FOUND TRUE)
-	cms_find_package(rootrio)
-	list(APPEND LIBS Thread)
-endif()

@@ -1,8 +1,0 @@
-if(NOT DataFormatsL1GlobalCaloTrigger_FOUND)
-  set(DataFormatsL1GlobalCaloTrigger_FOUND TRUE)
-  mark_as_advanced(DataFormatsL1GlobalCaloTrigger_FOUND)
-cms_find_package(DataFormatsL1CaloTrigger)
-cms_find_package(DataFormatsCommon)
-cms_find_package(boost)
-list(APPEND LIBS DataFormatsL1GlobalCaloTrigger)
-endif()

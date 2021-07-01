@@ -1,8 +1,0 @@
-if(NOT DataFormatsCastorReco_FOUND)
-  set(DataFormatsCastorReco_FOUND TRUE)
-  mark_as_advanced(DataFormatsCastorReco_FOUND)
-cms_find_package(DataFormatsHcalRecHit)
-cms_find_package(DataFormatsCandidate)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsCastorReco)
-endif()

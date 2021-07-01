@@ -1,7 +1,0 @@
-if(NOT DataFormatsHcalDigi_FOUND)
-  set(DataFormatsHcalDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsHcalDigi_FOUND)
-cms_find_package(DataFormatsHcalDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsHcalDigi)
-endif()

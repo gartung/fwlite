@@ -1,5 +1,0 @@
-if(NOT DataFormatsMuonData_FOUND)
-  set(DataFormatsMuonData_FOUND TRUE)
-  mark_as_advanced(DataFormatsMuonData_FOUND)
-list(APPEND LIBS DataFormatsMuonData)
-endif()

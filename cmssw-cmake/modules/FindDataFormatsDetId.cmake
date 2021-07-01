@@ -1,6 +1,0 @@
-if(NOT DataFormatsDetId_FOUND)
-  set(DataFormatsDetId_FOUND TRUE)
-  mark_as_advanced(DataFormatsDetId_FOUND)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsDetId)
-endif()

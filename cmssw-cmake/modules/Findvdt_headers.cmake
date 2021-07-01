@@ -1,6 +1,0 @@
-if(NOT VDT_HEADERS_FOUND)
-	mark_as_advanced(VDT_HEADERS_FOUND)
-	set(VDT_HEADERS_FOUND TRUE)
-	cms_find_package(root_cxxdefaults)
-	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include)
-endif()

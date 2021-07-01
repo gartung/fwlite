@@ -1,7 +1,0 @@
-if(NOT ROOTGUIHTML_FOUND)
-	mark_as_advanced(ROOTGUIHTML_FOUND)
-	set(ROOTGUIHTML_FOUND TRUE)
-	cms_find_package(rootgui)
-	cms_find_package(rootinteractive)
-	list(APPEND LIBS GuiHtml)
-endif()

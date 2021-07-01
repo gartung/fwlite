@@ -1,6 +1,0 @@
-if(NOT BOOST_TEST_FOUND)
-	mark_as_advanced(BOOST_TEST_FOUND)
-	set(BOOST_TEST_FOUND TRUE)
-	cms_find_package(boost)
-	list(APPEND LIBS boost_unit_test_framework)
-endif()

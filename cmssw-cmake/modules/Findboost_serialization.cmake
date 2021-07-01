@@ -1,6 +1,0 @@
-if(NOT BOOST_SERIALIZATION_FOUND)
-	mark_as_advanced(BOOST_SERIALIZATION_FOUND)
-	set(BOOST_SERIALIZATION_FOUND TRUE)
-	cms_find_package(boost)
-	list(APPEND LIBS boost_serialization)
-endif()

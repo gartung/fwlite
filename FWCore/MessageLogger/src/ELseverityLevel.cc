@@ -10,7 +10,7 @@
 //      using operator<() or the like.
 //
 // ----------------------------------------------------------------------
-
+#include <array>
 #include <cassert>
 #include <ostream>
 

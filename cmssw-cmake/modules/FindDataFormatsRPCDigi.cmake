@@ -1,8 +1,0 @@
-if(NOT DataFormatsRPCDigi_FOUND)
-  set(DataFormatsRPCDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsRPCDigi_FOUND)
-cms_find_package(CondFormatsRPCObjects)
-cms_find_package(DataFormatsMuonDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsRPCDigi)
-endif()

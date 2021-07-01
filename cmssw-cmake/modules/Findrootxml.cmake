@@ -1,7 +1,0 @@
-if(NOT ROOTXML_FOUND)
-	mark_as_advanced(ROOTXML_FOUND)
-	set(ROOTXML_FOUND TRUE)
-	cms_find_package(rootcore)
-	cms_find_package(libxml2)
-	list(APPEND LIBS XMLParser)
-endif()

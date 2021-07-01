@@ -1,6 +1,0 @@
-if(NOT ROOTXMLIO_FOUND)
-	mark_as_advanced(ROOTXMLIO_FOUND)
-	set(ROOTXMLIO_FOUND TRUE)
-	cms_find_package(rootrio)
-	list(APPEND LIBS XMLIO)
-endif()

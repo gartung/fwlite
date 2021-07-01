@@ -1,4 +1,0 @@
-if(NOT FWLITEDATA_FOUND)
-	mark_as_advanced(FWLITEDATA_FOUND)
-	set(FWLITEDATA_FOUND TRUE)
-endif()

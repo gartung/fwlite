@@ -1,7 +1,0 @@
-if(NOT PhysicsToolsSelectorUtils_plugins_FOUND)
-  set(PhysicsToolsSelectorUtils_plugins_FOUND TRUE)
-  mark_as_advanced(PhysicsToolsSelectorUtils_plugins_FOUND)
-cms_find_package(CommonToolsUtils)
-cms_find_package(PhysicsToolsSelectorUtils)
-list(APPEND LIBS PhysicsToolsSelectorUtils_plugins)
-endif()

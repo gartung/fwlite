@@ -1,7 +1,0 @@
-if(NOT CalibTrackerStandaloneTrackerTopology_FOUND)
-  set(CalibTrackerStandaloneTrackerTopology_FOUND TRUE)
-  mark_as_advanced(CalibTrackerStandaloneTrackerTopology_FOUND)
-cms_find_package(DataFormatsTrackerCommon)
-cms_find_package(tinyxml2)
-list(APPEND LIBS CalibTrackerStandaloneTrackerTopology)
-endif()

@@ -1,7 +1,0 @@
-if(NOT ROOTGPAD_FOUND)
-	mark_as_advanced(ROOTGPAD_FOUND)
-	set(ROOTGPAD_FOUND TRUE)
-	cms_find_package(roothistmatrix)
-	list(APPEND LIBS Gpad)
-	list(APPEND LIBS Graf)
-endif()

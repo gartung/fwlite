@@ -1,6 +1,0 @@
-if(NOT ROOTMATHCORE_FOUND)
-	mark_as_advanced(ROOTMATHCORE_FOUND)
-	set(ROOTMATHCORE_FOUND TRUE)
-	cms_find_package(rootcling)
-	list(APPEND LIBS MathCore)
-endif()

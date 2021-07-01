@@ -1,7 +1,0 @@
-if(NOT ROOT_INTERFACE_FOUND)
-	mark_as_advanced(ROOT_INTERFACE_FOUND)
-	set(ROOT_INTERFACE_FOUND TRUE)
-	cms_find_package(root_cxxdefaults)
-	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include)
-	list(APPEND LIBRARY_DIRS ${CMAKE_INSTALL_PREFIX}/lib)
-endif()

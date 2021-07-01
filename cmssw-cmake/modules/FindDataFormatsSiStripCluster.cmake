@@ -1,8 +1,0 @@
-if(NOT DataFormatsSiStripCluster_FOUND)
-  set(DataFormatsSiStripCluster_FOUND TRUE)
-  mark_as_advanced(DataFormatsSiStripCluster_FOUND)
-cms_find_package(DataFormatsSiStripDigi)
-cms_find_package(DataFormatsTrajectoryState)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsSiStripCluster)
-endif()

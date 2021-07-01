@@ -1,6 +1,0 @@
-if(NOT PY2_PYBIND11_FOUND)
-	mark_as_advanced(PY2_PYBIND11_FOUND)
-	set(PY2_PYBIND11_FOUND TRUE)
-	list(APPEND INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include/${PYDOTVER})
-        cms_find_package(python)
-endif()

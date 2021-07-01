@@ -1,7 +1,0 @@
-if(NOT DataFormatsL1CaloTrigger_FOUND)
-  set(DataFormatsL1CaloTrigger_FOUND TRUE)
-  mark_as_advanced(DataFormatsL1CaloTrigger_FOUND)
-cms_find_package(DataFormatsDetId)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsL1CaloTrigger)
-endif()

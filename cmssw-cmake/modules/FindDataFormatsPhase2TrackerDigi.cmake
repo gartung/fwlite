@@ -1,6 +1,0 @@
-if(NOT DataFormatsPhase2TrackerDigi_FOUND)
-  set(DataFormatsPhase2TrackerDigi_FOUND TRUE)
-  mark_as_advanced(DataFormatsPhase2TrackerDigi_FOUND)
-cms_find_package(DataFormatsCommon)
-list(APPEND LIBS DataFormatsPhase2TrackerDigi)
-endif()

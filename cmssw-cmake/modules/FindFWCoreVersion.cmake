@@ -1,5 +1,0 @@
-if(NOT FWCoreVersion_FOUND)
-  set(FWCoreVersion_FOUND TRUE)
-  mark_as_advanced(FWCoreVersion_FOUND)
-list(APPEND LIBS FWCoreVersion)
-endif()

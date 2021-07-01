@@ -3,10 +3,10 @@ include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${OPENGL_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
@@ -14,8 +14,6 @@ ${TBB_INCLUDE_DIRS}
 ${TINYXML2_INCLUDE_DIR}
 ${UUID_INCLUDE_DIR}
 ${VDT_INCLUDE_DIR}
-${SIGCPP_INCLUDE_DIR}/sigc++-2.0
-${SIGCPP_INCLUDE_DIR}/../lib/sigc++-2.0/include
 /usr/include
 )
 
@@ -202,10 +200,10 @@ target_include_directories(FireworksCore PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${OPENGL_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
@@ -213,13 +211,10 @@ ${TBB_INCLUDE_DIRS}
 ${TINYXML2_INCLUDE_DIR}
 ${UUID_INCLUDE_DIR}
 ${VDT_INCLUDE_DIR}
-${SIGCPP_INCLUDE_DIR}/sigc++-2.0
-${SIGCPP_INCLUDE_DIR}/../lib/sigc++-2.0/include
 /usr/include
 )
 
 target_link_libraries(FireworksCore PUBLIC
-${SIGCPP_LIBRARY}
 ${OPENGL_gl_LIBRARY}
 ${OPENGL_glu_LIBRARY}
 Boost::program_options
@@ -246,6 +241,8 @@ FWCorePluginManager
 FWCoreReflection
 FWCoreUtilities
 FireworksTableWidget
+OpenGL::GL
+OpenGL::GLU
 ROOT::Core
 ROOT::Eve
 ROOT::Geom
@@ -266,9 +263,11 @@ ROOT::Rint
 ROOT::Thread
 ROOT::Tree
 ROOT::TreePlayer
-${JPEG_LIBRARY_RELEASE}
-${PNG_LIBRARY_RELEASE}
-${GLEW_SHARED_LIBRARY_RELEASE}
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

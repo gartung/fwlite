@@ -11,8 +11,8 @@ target_include_directories(edmPluginDump PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmPluginDump PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -23,6 +23,11 @@ ${UUID_INCLUDE_DIR}
 target_link_libraries(edmPluginDump PUBLIC
 Boost::program_options
 FWCorePluginManager
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 
@@ -45,8 +50,8 @@ target_include_directories(edmPluginRefresh PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmPluginRefresh PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -57,6 +62,11 @@ ${UUID_INCLUDE_DIR}
 target_link_libraries(edmPluginRefresh PUBLIC
 Boost::program_options
 FWCorePluginManager
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

@@ -28,10 +28,10 @@ target_include_directories(CommonToolsStatistics PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -42,7 +42,6 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(CommonToolsStatistics PUBLIC
 ${CLHEP_LIBRARIES}
-${CLHEP_MAIN_LIBRARY}
 DataFormatsCLHEP
 DataFormatsMath
 FWCoreMessageLogger
@@ -54,6 +53,12 @@ ROOT::Net
 ROOT::RIO
 ROOT::Thread
 ROOT::Tree
+Threads::Threads
+crypt
+dl
+gsl
+nsl
+rt
 )
 
 

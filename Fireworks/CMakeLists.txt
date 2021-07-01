@@ -4,23 +4,23 @@ add_subdirectory(Vertices)
 
 add_subdirectory(Electrons)
 
+add_subdirectory(ParticleFlow)
+
 add_subdirectory(Calo)
-
-add_subdirectory(Core)
-
-add_subdirectory(TableWidget)
 
 add_subdirectory(GenParticle)
 
 add_subdirectory(Tracks)
 
-add_subdirectory(ParticleFlow)
+add_subdirectory(TableWidget)
 
-add_subdirectory(Macros)
+add_subdirectory(Core)
+
+add_subdirectory(SimData)
 
 add_subdirectory(Muons)
 
-add_subdirectory(SimData)
+add_subdirectory(Macros)
 
 
 
@@ -36,6 +36,6 @@ add_custom_target(Fireworks_all)
 
 add_dependencies(Fireworks_all
   FireworksVertices
-  FireworksCore
   FireworksTableWidget
+  FireworksCore
 )

@@ -2,31 +2,31 @@ add_subdirectory(CrossingFrame)
 
 add_subdirectory(Track)
 
+add_subdirectory(TrackingHit)
+
+add_subdirectory(Vertex)
+
+add_subdirectory(EncodedEventId)
+
+add_subdirectory(TrackingAnalysis)
+
+add_subdirectory(CaloHit)
+
 add_subdirectory(TrackerDigiSimLink)
+
+add_subdirectory(CaloAnalysis)
 
 add_subdirectory(PileupSummaryInfo)
 
 add_subdirectory(RPCDigiSimLink)
 
-add_subdirectory(TrackingAnalysis)
-
-add_subdirectory(CaloAnalysis)
-
-add_subdirectory(CaloHit)
-
-add_subdirectory(GeneratorProducts)
-
-add_subdirectory(JetMatching)
+add_subdirectory(DigiSimLinks)
 
 add_subdirectory(RandomEngine)
 
-add_subdirectory(TrackingHit)
+add_subdirectory(JetMatching)
 
-add_subdirectory(EncodedEventId)
-
-add_subdirectory(Vertex)
-
-add_subdirectory(DigiSimLinks)
+add_subdirectory(GeneratorProducts)
 
 
 
@@ -43,16 +43,16 @@ add_custom_target(SimDataFormats_all)
 add_dependencies(SimDataFormats_all
   SimDataFormatsCrossingFrame
   SimDataFormatsTrack
+  SimDataFormatsTrackingHit
+  SimDataFormatsVertex
+  SimDataFormatsEncodedEventId
+  SimDataFormatsTrackingAnalysis
+  SimDataFormatsCaloHit
   SimDataFormatsTrackerDigiSimLink
+  SimDataFormatsCaloAnalysis
   SimDataFormatsPileupSummaryInfo
   SimDataFormatsRPCDigiSimLink
-  SimDataFormatsTrackingAnalysis
-  SimDataFormatsCaloAnalysis
-  SimDataFormatsCaloHit
-  SimDataFormatsGeneratorProducts
-  SimDataFormatsRandomEngine
-  SimDataFormatsTrackingHit
-  SimDataFormatsEncodedEventId
-  SimDataFormatsVertex
   SimDataFormatsDigiSimLinks
+  SimDataFormatsRandomEngine
+  SimDataFormatsGeneratorProducts
 )

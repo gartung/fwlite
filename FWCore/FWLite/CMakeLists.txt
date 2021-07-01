@@ -2,8 +2,8 @@ add_subdirectory(bin)
 include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -34,8 +34,8 @@ target_include_directories(FWCoreFWLite PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(FWCoreFWLite PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -48,6 +48,7 @@ target_link_libraries(FWCoreFWLite PUBLIC
 DataFormatsCommon
 DataFormatsProvenance
 FWCorePluginManager
+FWCoreReflection
 FWCoreUtilities
 ROOT::Core
 ROOT::MathCore

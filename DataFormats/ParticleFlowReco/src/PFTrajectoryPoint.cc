@@ -1,5 +1,4 @@
 #include "DataFormats/ParticleFlowReco/interface/PFTrajectoryPoint.h"
-#include <array>
 #include <ostream>
 #include <algorithm>
 

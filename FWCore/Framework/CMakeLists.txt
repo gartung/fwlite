@@ -98,6 +98,7 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/SourceFactory.cc
   src/StreamSchedule.cc
   src/SubProcess.cc
+  src/SynchronousEventSetupsController.cc
   src/SystemTimeKeeper.cc
   src/TriggerNamesService.cc
   src/TriggerResultInserter.cc
@@ -160,8 +161,8 @@ target_include_directories(FWCoreFramework PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(FWCoreFramework PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -188,6 +189,11 @@ ROOT::Net
 ROOT::RIO
 ROOT::Thread
 ROOT::Tree
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

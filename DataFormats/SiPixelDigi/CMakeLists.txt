@@ -1,8 +1,8 @@
 include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -19,6 +19,7 @@ add_library(DataFormatsSiPixelDigi SHARED ${DataFormatsSiPixelDigi_EXTRA_SOURCES
   src/PixelDigiCollection.cc
   src/SiPixelCalibDigi.cc
   src/SiPixelCalibDigiError.cc
+  src/SiPixelDigisSoA.cc
 )
 
 set_target_properties(DataFormatsSiPixelDigi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -30,8 +31,8 @@ target_include_directories(DataFormatsSiPixelDigi PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(DataFormatsSiPixelDigi PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}

@@ -1,130 +1,138 @@
+add_subdirectory(VertexReco)
+
 add_subdirectory(SiPixelDigi)
 
-add_subdirectory(EcalDigi)
+add_subdirectory(CaloRecHit)
+
+add_subdirectory(TrackingRecHit)
 
 add_subdirectory(DetId)
 
-add_subdirectory(Phase2TrackerCluster)
-
-add_subdirectory(Candidate)
+add_subdirectory(EcalDigi)
 
 add_subdirectory(HGCRecHit)
 
+add_subdirectory(Candidate)
+
+add_subdirectory(Phase2TrackerCluster)
+
 add_subdirectory(GEMDigi)
-
-add_subdirectory(RPCDigi)
-
-add_subdirectory(TrackReco)
-
-add_subdirectory(EgammaTrackReco)
-
-add_subdirectory(RPCRecHit)
-
-add_subdirectory(HcalIsolatedTrack)
-
-add_subdirectory(CaloRecHit)
 
 add_subdirectory(TauReco)
 
 add_subdirectory(FEDRawData)
 
-add_subdirectory(HepMCCandidate)
+add_subdirectory(RPCDigi)
+
+add_subdirectory(RPCRecHit)
+
+add_subdirectory(HcalIsolatedTrack)
+
+add_subdirectory(DTDigi)
 
 add_subdirectory(CSCDigi)
 
+add_subdirectory(TrackReco)
+
+add_subdirectory(HepMCCandidate)
+
+add_subdirectory(EgammaTrackReco)
+
+add_subdirectory(L1CaloTrigger)
+
+add_subdirectory(Luminosity)
+
+add_subdirectory(Scalers)
+
 add_subdirectory(PatCandidates)
-
-add_subdirectory(EgammaCandidates)
-
-add_subdirectory(CLHEP)
-
-add_subdirectory(L1GlobalMuonTrigger)
-
-add_subdirectory(VertexReco)
-
-add_subdirectory(DTDigi)
 
 add_subdirectory(HLTReco)
 
 add_subdirectory(MuonData)
 
-add_subdirectory(L1CaloTrigger)
+add_subdirectory(L1GlobalTrigger)
 
-add_subdirectory(Scalers)
+add_subdirectory(EgammaCandidates)
 
-add_subdirectory(Luminosity)
+add_subdirectory(L1TCorrelator)
 
 add_subdirectory(TrajectorySeed)
 
-add_subdirectory(L1GlobalTrigger)
+add_subdirectory(CLHEP)
+
+add_subdirectory(L1GlobalMuonTrigger)
+
+add_subdirectory(TrackCandidate)
+
+add_subdirectory(MuonDetId)
 
 add_subdirectory(FWLite)
 
+add_subdirectory(CSCRecHit)
+
 add_subdirectory(GEMRecHit)
+
+add_subdirectory(CaloTowers)
+
+add_subdirectory(HGCalReco)
+
+add_subdirectory(StdDictionaries)
 
 add_subdirectory(HcalDetId)
 
 add_subdirectory(SiPixelDetId)
 
-add_subdirectory(TrackerCommon)
-
 add_subdirectory(GeometryCommonDetAlgo)
-
-add_subdirectory(CaloTowers)
-
-add_subdirectory(StdDictionaries)
-
-add_subdirectory(CSCRecHit)
-
-add_subdirectory(TrackCandidate)
 
 add_subdirectory(BTauReco)
 
+add_subdirectory(TrackerCommon)
+
 add_subdirectory(L1GlobalCaloTrigger)
+
+add_subdirectory(GeometryVector)
+
+add_subdirectory(JetMatching)
 
 add_subdirectory(WrappedStdDictionaries)
 
 add_subdirectory(Math)
 
-add_subdirectory(SiStripCluster)
+add_subdirectory(Common)
 
-add_subdirectory(ParticleFlowReco)
+add_subdirectory(SiStripCluster)
 
 add_subdirectory(L1THGCal)
 
-add_subdirectory(TrackingRecHit)
+add_subdirectory(TrajectoryState)
 
 add_subdirectory(ParticleFlowCandidate)
 
-add_subdirectory(MuonDetId)
+add_subdirectory(ParticleFlowReco)
 
-add_subdirectory(TrajectoryState)
+add_subdirectory(DTRecHit)
 
-add_subdirectory(Common)
+add_subdirectory(L1TrackTrigger)
 
-add_subdirectory(GeometryVector)
+add_subdirectory(SiStripDigi)
 
 add_subdirectory(METReco)
 
 add_subdirectory(Provenance)
 
-add_subdirectory(Phase2TrackerDigi)
-
-add_subdirectory(HcalDigi)
-
-add_subdirectory(BeamSpot)
-
-add_subdirectory(RecoCandidate)
-
-add_subdirectory(CastorReco)
-
 add_subdirectory(MuonReco)
 
 add_subdirectory(ForwardDetId)
 
-add_subdirectory(DTRecHit)
+add_subdirectory(CastorReco)
 
-add_subdirectory(SiStripDigi)
+add_subdirectory(Phase2TrackerDigi)
+
+add_subdirectory(HcalDigi)
+
+add_subdirectory(RecoCandidate)
+
+add_subdirectory(BeamSpot)
 
 add_subdirectory(HcalRecHit)
 
@@ -132,25 +140,29 @@ add_subdirectory(EcalDetId)
 
 add_subdirectory(EcalRecHit)
 
-add_subdirectory(GsfTrackReco)
-
-add_subdirectory(L1CSCTrackFinder)
-
-add_subdirectory(TrackerRecHit2D)
-
-add_subdirectory(EgammaReco)
-
-add_subdirectory(GeometrySurface)
-
 add_subdirectory(JetReco)
 
 add_subdirectory(Histograms)
 
-add_subdirectory(SiStripDetId)
+add_subdirectory(GsfTrackReco)
+
+add_subdirectory(GeometrySurface)
+
+add_subdirectory(EgammaReco)
+
+add_subdirectory(L1CSCTrackFinder)
 
 add_subdirectory(SiPixelCluster)
 
+add_subdirectory(L1TMuon)
+
 add_subdirectory(FTLRecHit)
+
+add_subdirectory(TrackerRecHit2D)
+
+add_subdirectory(SiStripDetId)
+
+add_subdirectory(L1TParticleFlow)
 
 add_subdirectory(L1Trigger)
 
@@ -167,73 +179,77 @@ __path__.append(os.path.dirname(os.path.realpath(__file__)))")
 add_custom_target(DataFormats_all)
 
 add_dependencies(DataFormats_all
+  DataFormatsVertexReco
   DataFormatsSiPixelDigi
-  DataFormatsEcalDigi
-  DataFormatsDetId
-  DataFormatsCandidate
-  DataFormatsHGCRecHit
-  DataFormatsGEMDigi
-  DataFormatsRPCDigi
-  DataFormatsTrackReco
-  DataFormatsEgammaTrackReco
-  DataFormatsRPCRecHit
-  DataFormatsHcalIsolatedTrack
   DataFormatsCaloRecHit
+  DataFormatsTrackingRecHit
+  DataFormatsDetId
+  DataFormatsEcalDigi
+  DataFormatsHGCRecHit
+  DataFormatsCandidate
+  DataFormatsGEMDigi
   DataFormatsTauReco
   DataFormatsFEDRawData
-  DataFormatsHepMCCandidate
-  DataFormatsCSCDigi
-  DataFormatsPatCandidates
-  DataFormatsEgammaCandidates
-  DataFormatsL1GlobalMuonTrigger
-  DataFormatsVertexReco
+  DataFormatsRPCDigi
+  DataFormatsRPCRecHit
+  DataFormatsHcalIsolatedTrack
   DataFormatsDTDigi
-  DataFormatsHLTReco
+  DataFormatsCSCDigi
+  DataFormatsTrackReco
+  DataFormatsHepMCCandidate
+  DataFormatsEgammaTrackReco
   DataFormatsL1CaloTrigger
-  DataFormatsScalers
   DataFormatsLuminosity
+  DataFormatsScalers
+  DataFormatsPatCandidates
+  DataFormatsHLTReco
   DataFormatsL1GlobalTrigger
+  DataFormatsEgammaCandidates
+  DataFormatsL1TCorrelator
+  DataFormatsL1GlobalMuonTrigger
+  DataFormatsTrackCandidate
+  DataFormatsMuonDetId
   DataFormatsFWLite
+  DataFormatsCSCRecHit
   DataFormatsGEMRecHit
+  DataFormatsCaloTowers
   DataFormatsHcalDetId
   DataFormatsSiPixelDetId
-  DataFormatsTrackerCommon
   DataFormatsGeometryCommonDetAlgo
-  DataFormatsCaloTowers
-  DataFormatsCSCRecHit
-  DataFormatsTrackCandidate
   DataFormatsBTauReco
+  DataFormatsTrackerCommon
   DataFormatsL1GlobalCaloTrigger
-  DataFormatsMath
-  DataFormatsSiStripCluster
-  DataFormatsParticleFlowReco
-  DataFormatsL1THGCal
-  DataFormatsTrackingRecHit
-  DataFormatsParticleFlowCandidate
-  DataFormatsMuonDetId
-  DataFormatsCommon
   DataFormatsGeometryVector
+  DataFormatsMath
+  DataFormatsCommon
+  DataFormatsSiStripCluster
+  DataFormatsL1THGCal
+  DataFormatsParticleFlowCandidate
+  DataFormatsParticleFlowReco
+  DataFormatsDTRecHit
+  DataFormatsL1TrackTrigger
+  DataFormatsSiStripDigi
   DataFormatsMETReco
   DataFormatsProvenance
-  DataFormatsHcalDigi
-  DataFormatsBeamSpot
-  DataFormatsRecoCandidate
-  DataFormatsCastorReco
   DataFormatsMuonReco
   DataFormatsForwardDetId
-  DataFormatsDTRecHit
-  DataFormatsSiStripDigi
+  DataFormatsCastorReco
+  DataFormatsHcalDigi
+  DataFormatsRecoCandidate
+  DataFormatsBeamSpot
   DataFormatsHcalRecHit
   DataFormatsEcalDetId
   DataFormatsEcalRecHit
-  DataFormatsGsfTrackReco
-  DataFormatsL1CSCTrackFinder
-  DataFormatsTrackerRecHit2D
-  DataFormatsEgammaReco
-  DataFormatsGeometrySurface
   DataFormatsJetReco
-  DataFormatsSiStripDetId
+  DataFormatsGsfTrackReco
+  DataFormatsGeometrySurface
+  DataFormatsEgammaReco
+  DataFormatsL1CSCTrackFinder
   DataFormatsSiPixelCluster
+  DataFormatsL1TMuon
   DataFormatsFTLRecHit
+  DataFormatsTrackerRecHit2D
+  DataFormatsSiStripDetId
+  DataFormatsL1TParticleFlow
   DataFormatsL1Trigger
 )

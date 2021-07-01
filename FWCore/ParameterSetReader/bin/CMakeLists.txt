@@ -11,8 +11,8 @@ target_include_directories(edmConfigHash PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmConfigHash PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${PYBIND11_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
@@ -25,6 +25,11 @@ ${UUID_INCLUDE_DIR}
 target_link_libraries(edmConfigHash PUBLIC
 FWCoreParameterSet
 FWCoreParameterSetReader
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 
@@ -47,8 +52,8 @@ target_include_directories(edmParameterSetDump PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmParameterSetDump PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${PYBIND11_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
@@ -61,6 +66,11 @@ ${UUID_INCLUDE_DIR}
 target_link_libraries(edmParameterSetDump PUBLIC
 FWCoreParameterSet
 FWCoreParameterSetReader
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

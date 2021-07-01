@@ -1,8 +1,8 @@
 include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -21,6 +21,7 @@ add_library(DataFormatsProvenance SHARED ${DataFormatsProvenance_EXTRA_SOURCES}
   src/BranchIDListHelper.cc
   src/BranchKey.cc
   src/BranchType.cc
+  src/CompactEventAuxiliaryVector.cc
   src/ESRecordAuxiliary.cc
   src/ElementID.cc
   src/EventAux.cc
@@ -75,8 +76,8 @@ target_include_directories(DataFormatsProvenance PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(DataFormatsProvenance PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -86,6 +87,7 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(DataFormatsProvenance PUBLIC
 ${TBB_LIBRARIES}
+FWCoreConcurrency
 FWCoreReflection
 FWCoreUtilities
 ROOT::Core
@@ -94,7 +96,6 @@ ROOT::Net
 ROOT::RIO
 ROOT::Thread
 ROOT::Tree
-fmt::fmt
 )
 
 

@@ -2,11 +2,11 @@ include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
 ${HEPMC_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -19,11 +19,11 @@ ${XZ_INCLUDE_DIR}
 
 cms_rootdict(DataFormatsPatCandidates src/classes_objects.h src/classes_def_objects.xml)
 
-cms_rootdict(DataFormatsPatCandidates src/classes_user.h src/classes_def_user.xml)
+cms_rootdict(DataFormatsPatCandidates src/classes_other.h src/classes_def_other.xml)
 
 cms_rootdict(DataFormatsPatCandidates src/classes_trigger.h src/classes_def_trigger.xml)
 
-cms_rootdict(DataFormatsPatCandidates src/classes_other.h src/classes_def_other.xml)
+cms_rootdict(DataFormatsPatCandidates src/classes_user.h src/classes_def_user.xml)
 
 add_rootdict_rules(DataFormatsPatCandidates)
 
@@ -79,11 +79,11 @@ target_include_directories(DataFormatsPatCandidates PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
 ${HEPMC_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -96,7 +96,6 @@ ${XZ_INCLUDE_DIR}
 
 target_link_libraries(DataFormatsPatCandidates PUBLIC
 ${CLHEP_LIBRARIES}
-${CLHEP_MAIN_LIBRARY}
 DataFormatsBTauReco
 DataFormatsCLHEP
 DataFormatsCaloTowers
@@ -109,6 +108,7 @@ DataFormatsGeometryCommonDetAlgo
 DataFormatsGsfTrackReco
 DataFormatsHLTReco
 DataFormatsHepMCCandidate
+DataFormatsJetMatching
 DataFormatsJetReco
 DataFormatsL1GlobalTrigger
 DataFormatsL1Trigger
@@ -136,6 +136,12 @@ ROOT::Net
 ROOT::RIO
 ROOT::Thread
 ROOT::Tree
+Threads::Threads
+crypt
+dl
+gsl
+nsl
+rt
 )
 
 

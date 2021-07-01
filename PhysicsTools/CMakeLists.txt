@@ -1,8 +1,8 @@
 add_subdirectory(FWLite)
 
-add_subdirectory(Utilities)
-
 add_subdirectory(SelectorUtils)
+
+add_subdirectory(Utilities)
 
 
 
@@ -18,6 +18,6 @@ add_custom_target(PhysicsTools_all)
 
 add_dependencies(PhysicsTools_all
   PhysicsToolsFWLite
-  PhysicsToolsUtilities
   PhysicsToolsSelectorUtils
+  PhysicsToolsUtilities
 )

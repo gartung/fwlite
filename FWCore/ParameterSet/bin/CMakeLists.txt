@@ -11,8 +11,8 @@ target_include_directories(edmPluginHelp PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmPluginHelp PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -26,6 +26,11 @@ Boost::program_options
 FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 
@@ -48,8 +53,8 @@ target_include_directories(edmWriteConfigs PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmWriteConfigs PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -63,6 +68,11 @@ Boost::program_options
 FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

@@ -2,11 +2,11 @@ include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
 ${HEPMC_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -17,11 +17,11 @@ ${XZ_INCLUDE_DIR}
 /usr/include
 )
 
-cms_rootdict(DataFormatsTauReco src/classes_3.h src/classes_def_3.xml)
+cms_rootdict(DataFormatsTauReco src/classes_1.h src/classes_def_1.xml)
 
 cms_rootdict(DataFormatsTauReco src/classes_2.h src/classes_def_2.xml)
 
-cms_rootdict(DataFormatsTauReco src/classes_1.h src/classes_def_1.xml)
+cms_rootdict(DataFormatsTauReco src/classes_3.h src/classes_def_3.xml)
 
 cms_rootdict(DataFormatsTauReco src/classes_hlt.h src/classes_def_hlt.xml)
 
@@ -49,11 +49,11 @@ target_include_directories(DataFormatsTauReco PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
 ${HEPMC_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -72,6 +72,8 @@ DataFormatsMath
 DataFormatsParticleFlowCandidate
 DataFormatsRecoCandidate
 DataFormatsTrackReco
+DataFormatsVertexReco
+FWCoreMessageLogger
 )
 
 

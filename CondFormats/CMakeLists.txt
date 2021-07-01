@@ -4,6 +4,8 @@ add_subdirectory(Serialization)
 
 add_subdirectory(RPCObjects)
 
+add_subdirectory(Alignment)
+
 add_subdirectory(External)
 
 
@@ -21,4 +23,5 @@ add_custom_target(CondFormats_all)
 add_dependencies(CondFormats_all
   CondFormatsL1TObjects
   CondFormatsRPCObjects
+  CondFormatsAlignment
 )

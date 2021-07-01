@@ -1,6 +1,6 @@
-add_subdirectory(General)
-
 add_subdirectory(ReleaseScripts)
+
+add_subdirectory(General)
 
 
 

@@ -2,10 +2,10 @@ include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -21,8 +21,6 @@ add_rootdict_rules(DataFormatsCLHEP)
 add_library(DataFormatsCLHEP SHARED ${DataFormatsCLHEP_EXTRA_SOURCES})
 
 set_target_properties(DataFormatsCLHEP PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-
-target_link_libraries(DataFormatsCLHEP PUBLIC ${CLHEP_LIBRARIES} ROOT::Core)
 
  add_dependencies( ALL_LIBS DataFormatsCLHEP)
 

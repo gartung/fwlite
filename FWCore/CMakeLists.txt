@@ -1,24 +1,24 @@
-add_subdirectory(MessageLogger)
-
-add_subdirectory(Framework)
-
 add_subdirectory(ServiceRegistry)
 
-add_subdirectory(FWLite)
+add_subdirectory(MessageLogger)
+
+add_subdirectory(Concurrency)
+
+add_subdirectory(Framework)
 
 add_subdirectory(ParameterSet)
 
 add_subdirectory(Utilities)
 
-add_subdirectory(Concurrency)
+add_subdirectory(FWLite)
 
 add_subdirectory(Common)
 
 add_subdirectory(Version)
 
-add_subdirectory(PluginManager)
-
 add_subdirectory(PythonUtilities)
+
+add_subdirectory(PluginManager)
 
 add_subdirectory(PythonParameterSet)
 

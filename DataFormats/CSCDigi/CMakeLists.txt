@@ -2,10 +2,10 @@ include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -33,6 +33,7 @@ add_library(DataFormatsCSCDigi SHARED ${DataFormatsCSCDigi_EXTRA_SOURCES}
   src/CSCDDUStatusDigi.cc
   src/CSCDMBStatusDigi.cc
   src/CSCRPCDigi.cc
+  src/CSCShowerDigi.cc
   src/CSCStripDigi.cc
   src/CSCTMBStatusDigi.cc
   src/CSCWireDigi.cc
@@ -48,10 +49,10 @@ target_include_directories(DataFormatsCSCDigi PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -65,6 +66,7 @@ target_link_libraries(DataFormatsCSCDigi PUBLIC
 DataFormatsCommon
 DataFormatsGEMDigi
 DataFormatsMuonDetId
+FWCoreMessageLogger
 )
 
 

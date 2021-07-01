@@ -2,6 +2,8 @@ add_library(FWCoreServiceRegistry SHARED ${FWCoreServiceRegistry_EXTRA_SOURCES}
   src/ActivityRegistry.cc
   src/ConsumesInfo.cc
   src/CurrentModuleOnThread.cc
+  src/ESModuleCallingContext.cc
+  src/ESParentContext.cc
   src/GlobalContext.cc
   src/InternalContext.cc
   src/ModuleCallingContext.cc
@@ -28,8 +30,8 @@ target_include_directories(FWCoreServiceRegistry PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(FWCoreServiceRegistry PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -40,6 +42,7 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(FWCoreServiceRegistry PUBLIC
 DataFormatsProvenance
+FWCoreMessageLogger
 FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities

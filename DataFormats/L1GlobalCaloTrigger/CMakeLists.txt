@@ -1,8 +1,8 @@
 include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -44,8 +44,8 @@ target_include_directories(DataFormatsL1GlobalCaloTrigger PRIVATE ${CMAKE_SOURCE
 target_include_directories(DataFormatsL1GlobalCaloTrigger PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -57,6 +57,11 @@ ${UUID_INCLUDE_DIR}
 target_link_libraries(DataFormatsL1GlobalCaloTrigger PUBLIC
 DataFormatsCommon
 DataFormatsL1CaloTrigger
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

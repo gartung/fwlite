@@ -1,8 +1,8 @@
 include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -29,8 +29,8 @@ target_include_directories(SimDataFormatsRandomEngine PRIVATE ${CMAKE_SOURCE_DIR
 target_include_directories(SimDataFormatsRandomEngine PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -42,6 +42,11 @@ ${UUID_INCLUDE_DIR}
 target_link_libraries(SimDataFormatsRandomEngine PUBLIC
 DataFormatsCommon
 FWCoreUtilities
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

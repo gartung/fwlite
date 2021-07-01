@@ -46,8 +46,8 @@ target_include_directories(FWCoreParameterSet PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(FWCoreParameterSet PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -58,12 +58,15 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(FWCoreParameterSet PUBLIC
 ${TBB_LIBRARIES}
-Boost::filesystem
-Boost::system
 DataFormatsProvenance
 FWCoreMessageLogger
 FWCorePluginManager
 FWCoreUtilities
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

@@ -35,10 +35,10 @@ target_include_directories(GeometryCommonTopologies PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -49,6 +49,7 @@ ${VDT_INCLUDE_DIR}
 )
 
 target_link_libraries(GeometryCommonTopologies PUBLIC
+CondFormatsAlignment
 DataFormatsDetId
 DataFormatsGeometryCommonDetAlgo
 DataFormatsGeometrySurface

@@ -15,10 +15,10 @@ target_include_directories(FireworksTracks PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
 ${CLHEP_INCLUDE_DIR}
+${CMSMD5_INCLUDE_DIR}
 ${EIGEN_INCLUDE_DIR}/eigen3
 ${FMT_INCLUDE_DIR}
 ${GSL_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${OPENGL_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
@@ -64,6 +64,7 @@ ROOT::Rint
 ROOT::Thread
 ROOT::Tree
 ROOT::TreePlayer
+gsl
 )
 
 

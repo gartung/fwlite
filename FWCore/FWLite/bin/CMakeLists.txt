@@ -11,8 +11,8 @@ target_include_directories(edmClassStorageSize PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmClassStorageSize PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -30,6 +30,11 @@ ROOT::Net
 ROOT::RIO
 ROOT::Thread
 ROOT::Tree
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 
@@ -52,8 +57,8 @@ target_include_directories(edmBranchStorageSize PRIVATE ${CMAKE_SOURCE_DIR})
 target_include_directories(edmBranchStorageSize PUBLIC
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python
+${CMSMD5_INCLUDE_DIR}
 ${FMT_INCLUDE_DIR}
-${MD5_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
@@ -71,6 +76,11 @@ ROOT::Net
 ROOT::RIO
 ROOT::Thread
 ROOT::Tree
+Threads::Threads
+crypt
+dl
+nsl
+rt
 )
 
 

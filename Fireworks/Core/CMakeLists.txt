@@ -10,10 +10,13 @@ ${GSL_INCLUDE_DIR}
 ${OPENGL_INCLUDE_DIR}
 ${Python_INCLUDE_DIR}
 ${ROOT_INCLUDE_DIR}
+${SIGCPP_INCLUDE_DIR}
+${SIGCPP_LIB_INCLUDE_DIR}
 ${TBB_INCLUDE_DIRS}
 ${TINYXML2_INCLUDE_DIR}
 ${UUID_INCLUDE_DIR}
 ${VDT_INCLUDE_DIR}
+${SIGCPP_INCLUDE_DIR}
 /usr/include
 )
 
@@ -214,12 +217,17 @@ ${VDT_INCLUDE_DIR}
 /usr/include
 )
 
+if (APPLE)
+  set(GRAPHICS_LIB ROOT::GCocoa)
+else()
+  set(GRAPHICS_LIB ROOT::GX11)
+endif()
 target_link_libraries(FireworksCore PUBLIC
 ${OPENGL_gl_LIBRARY}
 ${OPENGL_glu_LIBRARY}
-Boost::program_options
-Boost::regex
-Boost::system
+${Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE}
+${Boost_REGEX_LIBRARY_RELEASE}
+${Boost_SYSTEM_LIBRARY_RELEASE}
 CalibTrackerStandaloneTrackerTopology
 CommonToolsUtils
 DataFormatsBeamSpot
@@ -264,6 +272,9 @@ ROOT::Thread
 ROOT::Tree
 ROOT::TreePlayer
 Threads::Threads
+jpeg
+${GRAPHICS_LIB}
+${SIGCPP_LIBRARY}
 crypt
 dl
 nsl

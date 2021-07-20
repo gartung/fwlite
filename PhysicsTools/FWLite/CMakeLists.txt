@@ -1,4 +1,3 @@
-add_subdirectory(bin)
 include_directories(${CMAKE_SOURCE_DIR}
 ${Boost_INCLUDE_DIR}
 ${Boost_INCLUDE_DIR}/python

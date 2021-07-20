@@ -1,4 +1,3 @@
-add_subdirectory(bin)
 add_subdirectory(plugins)
 
 include_directories(${CMAKE_SOURCE_DIR}

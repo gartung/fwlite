@@ -1,6 +1,7 @@
 #include "DataFormats/ParticleFlowReco/interface/PFTrajectoryPoint.h"
 #include <ostream>
 #include <algorithm>
+#include <array>
 
 using namespace reco;
 

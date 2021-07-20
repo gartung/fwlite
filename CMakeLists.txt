@@ -61,7 +61,10 @@ find_package(HepMC)
 
 find_package(OpenGL)
 
+find_package(SIGCPP)
+
 find_package(TBB)
+set(TBB_LIBRARIES ${TBB_LIBRARY_RELEASE})
 
 find_package(TINYXML2)
 

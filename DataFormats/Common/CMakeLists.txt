@@ -65,10 +65,6 @@ DataFormatsProvenance
 FWCoreMessageLogger
 FWCoreUtilities
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

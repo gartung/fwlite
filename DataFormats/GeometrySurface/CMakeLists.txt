@@ -64,10 +64,6 @@ DataFormatsGeometryVector
 DataFormatsMath
 FWCoreUtilities
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

@@ -63,10 +63,6 @@ FWCoreMessageLogger
 FWCorePluginManager
 FWCoreUtilities
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

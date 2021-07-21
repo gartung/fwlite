@@ -68,10 +68,6 @@ ROOT::Thread
 ROOT::Tree
 SimDataFormatsPileupSummaryInfo
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

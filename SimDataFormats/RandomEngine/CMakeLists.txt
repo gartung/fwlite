@@ -43,10 +43,6 @@ target_link_libraries(SimDataFormatsRandomEngine PUBLIC
 DataFormatsCommon
 FWCoreUtilities
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

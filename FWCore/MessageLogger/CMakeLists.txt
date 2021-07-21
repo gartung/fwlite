@@ -54,11 +54,7 @@ ${TINYXML2_LIBRARY}
 DataFormatsProvenance
 FWCoreUtilities
 Threads::Threads
-crypt
-dl
 fmt::fmt
-nsl
-rt
 )
 
 

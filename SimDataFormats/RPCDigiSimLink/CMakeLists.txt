@@ -47,10 +47,6 @@ DataFormatsCommon
 DataFormatsGeometryVector
 SimDataFormatsEncodedEventId
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

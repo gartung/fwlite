@@ -275,10 +275,6 @@ Threads::Threads
 jpeg
 ${GRAPHICS_LIB}
 ${SIGCPP_LIBRARY}
-crypt
-dl
-nsl
-rt
 )
 
 

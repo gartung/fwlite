@@ -31,10 +31,6 @@ ROOT::RIO
 ROOT::Thread
 ROOT::Tree
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 
@@ -77,10 +73,6 @@ ROOT::RIO
 ROOT::Thread
 ROOT::Tree
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

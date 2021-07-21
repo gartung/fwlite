@@ -26,10 +26,6 @@ target_link_libraries(edmConfigHash PUBLIC
 FWCoreParameterSet
 FWCoreParameterSetReader
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 
@@ -67,10 +63,6 @@ target_link_libraries(edmParameterSetDump PUBLIC
 FWCoreParameterSet
 FWCoreParameterSetReader
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

@@ -24,10 +24,6 @@ target_link_libraries(edmPluginDump PUBLIC
 Boost::program_options
 FWCorePluginManager
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 
@@ -63,10 +59,6 @@ target_link_libraries(edmPluginRefresh PUBLIC
 Boost::program_options
 FWCorePluginManager
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

@@ -43,10 +43,6 @@ DataFormatsCommon
 DataFormatsMuonDetId
 SimDataFormatsEncodedEventId
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

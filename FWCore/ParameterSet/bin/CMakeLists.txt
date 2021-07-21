@@ -27,10 +27,6 @@ FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 
@@ -69,10 +65,6 @@ FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

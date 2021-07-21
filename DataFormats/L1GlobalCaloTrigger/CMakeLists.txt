@@ -58,10 +58,6 @@ target_link_libraries(DataFormatsL1GlobalCaloTrigger PUBLIC
 DataFormatsCommon
 DataFormatsL1CaloTrigger
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

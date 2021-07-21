@@ -60,10 +60,6 @@ FWCoreMessageLogger
 FWCoreUtilities
 ROOT::Core
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

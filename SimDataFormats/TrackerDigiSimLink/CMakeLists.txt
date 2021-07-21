@@ -44,10 +44,6 @@ target_link_libraries(SimDataFormatsTrackerDigiSimLink PUBLIC
 DataFormatsCommon
 SimDataFormatsEncodedEventId
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

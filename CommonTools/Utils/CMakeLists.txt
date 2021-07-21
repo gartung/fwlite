@@ -66,10 +66,6 @@ ROOT::Tree
 Threads::Threads
 ${Boost_THREAD_LIBRARY_RELEASE}
 ${Boost_DATE_TIME_LIBRARY_RELEASE}
-crypt
-dl
-nsl
-rt
 )
 
 

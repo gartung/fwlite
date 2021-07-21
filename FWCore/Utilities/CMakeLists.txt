@@ -57,20 +57,25 @@ ${UUID_INCLUDE_DIR}
 /usr/include
 )
 
+if (APPLE)
 target_link_libraries(FWCoreUtilities PUBLIC
 ${CMSMD5_LIBRARY}
 ${TBB_LIBRARIES}
 ${UUID_LIBRARIES}
 Boost::regex
 Threads::Threads
-crypt
-dl
 fmt::fmt
-nsl
-rt
-stdc++fs
-)
-
+c++experimental)
+else()
+target_link_libraries(FWCoreUtilities PUBLIC
+${CMSMD5_LIBRARY}
+${TBB_LIBRARIES}
+${UUID_LIBRARIES}
+Boost::regex
+Threads::Threads
+fmt::fmt
+stdc++fs)
+endif()
 
 add_python_rules(FWCore/Utilities)
 

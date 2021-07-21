@@ -29,6 +29,7 @@ ${UUID_INCLUDE_DIR}
 /usr/include
 )
 
+if (APPLE)
 target_link_libraries(FWCorePluginManager PUBLIC
 ${TBB_LIBRARIES}
 FWCoreUtilities
@@ -39,13 +40,22 @@ ROOT::RIO
 ROOT::Thread
 ROOT::Tree
 Threads::Threads
-crypt
-dl
-nsl
-rt
+c++experimental
+)
+else()
+target_link_libraries(FWCorePluginManager PUBLIC
+${TBB_LIBRARIES}
+FWCoreUtilities
+ROOT::Core
+ROOT::MathCore
+ROOT::Net
+ROOT::RIO
+ROOT::Thread
+ROOT::Tree
+Threads::Threads
 stdc++fs
 )
-
+endif()
 
 add_python_rules(FWCore/PluginManager)
 

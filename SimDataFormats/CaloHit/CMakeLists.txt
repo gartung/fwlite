@@ -53,10 +53,6 @@ DataFormatsCommon
 DataFormatsMath
 SimDataFormatsEncodedEventId
 Threads::Threads
-crypt
-dl
-nsl
-rt
 )
 
 

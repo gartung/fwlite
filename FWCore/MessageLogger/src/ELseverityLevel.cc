@@ -13,6 +13,7 @@
 
 #include <cassert>
 #include <ostream>
+#include <array>
 
 #include "FWCore/MessageLogger/interface/ELseverityLevel.h"
 #include "FWCore/MessageLogger/interface/ELmap.h"

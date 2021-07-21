@@ -17,6 +17,8 @@ add_rootdict_rules(DataFormatsWrappedStdDictionaries)
 
 add_library(DataFormatsWrappedStdDictionaries SHARED ${DataFormatsWrappedStdDictionaries_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsWrappedStdDictionaries PUBLIC DataFormatsCommon)
+
 set_target_properties(DataFormatsWrappedStdDictionaries PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsWrappedStdDictionaries)

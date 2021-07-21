@@ -19,6 +19,11 @@ add_rootdict_rules(DataFormatsTrajectoryState)
 
 add_library(DataFormatsTrajectoryState SHARED ${DataFormatsTrajectoryState_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsTrajectoryState PUBLIC
+DataFormatsGeometryVector
+DataFormatsMath
+)
+
 set_target_properties(DataFormatsTrajectoryState PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsTrajectoryState)

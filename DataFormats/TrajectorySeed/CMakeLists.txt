@@ -21,6 +21,14 @@ add_rootdict_rules(DataFormatsTrajectorySeed)
 
 add_library(DataFormatsTrajectorySeed SHARED ${DataFormatsTrajectorySeed_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsTrajectorySeed PUBLIC
+DataFormatsCommon
+DataFormatsCLHEP
+DataFormatsTrajectoryState
+DataFormatsTrackingRecHit
+FWCoreUtilities
+)
+
 set_target_properties(DataFormatsTrajectorySeed PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsTrajectorySeed)

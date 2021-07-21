@@ -14,6 +14,8 @@ add_rootdict_rules(DataFormatsStdDictionaries)
 
 add_library(DataFormatsStdDictionaries SHARED ${DataFormatsStdDictionaries_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsStdDictionaries PUBLIC ROOT::Core)
+
 set_target_properties(DataFormatsStdDictionaries PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsStdDictionaries)

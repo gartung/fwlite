@@ -143,7 +143,7 @@ macro(add_rootdict_rules name)
 endmacro()
 
 add_custom_command(TARGET ALL_LIBS POST_BUILD
-  COMMAND $<TARGET_FILE:edmPluginRefresh> "plugin*.so" 
+  COMMAND $<TARGET_FILE:edmPluginRefresh> "plugin*" 
   WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/lib
   DEPENDS edmPluginRefresh
   BYPRODUCTS ${CMAKE_BINARY_DIR}/lib/.edmplugincache

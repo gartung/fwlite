@@ -56,6 +56,7 @@ FWCoreUtilities
 ROOT::Core
 ROOT::Foam
 ROOT::Graf
+ROOT::Gpad
 ROOT::Hist
 ROOT::MathCore
 ROOT::Matrix
@@ -66,6 +67,7 @@ ROOT::RIO
 ROOT::RooFitCore
 ROOT::Thread
 ROOT::Tree
+ROOT::ROOTCanvasPainter
 SimDataFormatsPileupSummaryInfo
 Threads::Threads
 )

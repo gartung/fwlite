@@ -20,6 +20,7 @@
 
 // system include files
 #include <cmath>
+#include <unordered_map>
 
 // user include files
 #include "Fireworks/Core/interface/FWSimpleProxyBuilder.h"

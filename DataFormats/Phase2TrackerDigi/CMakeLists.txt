@@ -17,6 +17,8 @@ add_rootdict_rules(DataFormatsPhase2TrackerDigi)
 
 add_library(DataFormatsPhase2TrackerDigi SHARED ${DataFormatsPhase2TrackerDigi_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsPhase2TrackerDigi PUBLIC DataFormatsCommon)
+
 set_target_properties(DataFormatsPhase2TrackerDigi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsPhase2TrackerDigi)

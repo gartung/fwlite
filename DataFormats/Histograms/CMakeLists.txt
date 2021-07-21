@@ -17,6 +17,14 @@ add_rootdict_rules(DataFormatsHistograms)
 
 add_library(DataFormatsHistograms SHARED ${DataFormatsHistograms_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsHistograms PUBLIC 
+ROOT::Hist
+ROOT::Matrix
+DataFormatsCommon
+DataFormatsProvenance
+FWCoreUtilities
+)
+
 set_target_properties(DataFormatsHistograms PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsHistograms)

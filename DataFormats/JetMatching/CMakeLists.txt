@@ -23,6 +23,13 @@ add_rootdict_rules(DataFormatsJetMatching)
 
 add_library(DataFormatsJetMatching SHARED ${DataFormatsJetMatching_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsJetMatching PUBLIC
+DataFormatsCommon
+DataFormatsHepMCCandidate
+DataFormatsJetReco
+DataFormatsMath
+)
+
 set_target_properties(DataFormatsJetMatching PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsJetMatching)

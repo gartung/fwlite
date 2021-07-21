@@ -20,6 +20,11 @@ add_rootdict_rules(DataFormatsCLHEP)
 
 add_library(DataFormatsCLHEP SHARED ${DataFormatsCLHEP_EXTRA_SOURCES})
 
+target_link_libraries(DataFormatsCLHEP PUBLIC
+DataFormatsMath
+${CLHEP_MAIN_LIBRARY}
+)
+
 set_target_properties(DataFormatsCLHEP PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
  add_dependencies( ALL_LIBS DataFormatsCLHEP)

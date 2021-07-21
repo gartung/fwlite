@@ -274,7 +274,7 @@ ROOT::TreePlayer
 Threads::Threads
 jpeg
 png
-glew
+GLEW
 ${GRAPHICS_LIB}
 ${SIGCPP_LIBRARY}
 )

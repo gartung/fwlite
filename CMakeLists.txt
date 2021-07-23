@@ -131,8 +131,8 @@ macro(add_rootdict_rules name)
                     -o ${classes_cc}
                     --deep
                     --rootmap=${CMAKE_BINARY_DIR}/lib/${dict}.rootmap
-                    --rootmap-lib=${CMAKE_BINARY_DIR}/lib/lib${name}.so
-                    --library ${CMAKE_BINARY_DIR}/lib/lib${name}.so --multiDict
+                    --rootmap-lib=${CMAKE_BINARY_DIR}/lib/lib${name}${CMAKE_SHARED_LIBRARY_SUFFIX}
+                    --library ${CMAKE_BINARY_DIR}/lib/lib${name}${CMAKE_SHARED_LIBRARY_SUFFIX} --multiDict
                     -DCMS_DICT_IMPL -D_REENTRANT -DGNUSOURCE -D__STRICT_ANSI__ ${FLAGS} -DCMSSW_REFLEX_DICT 
                     -I${CMAKE_SOURCE_DIR} ${flags}
                     DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/${classes_h} ${CMAKE_CURRENT_SOURCE_DIR}/${classes_xml}

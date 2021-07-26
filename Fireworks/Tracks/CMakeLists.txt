@@ -66,7 +66,7 @@ ROOT::Rint
 ROOT::Thread
 ROOT::Tree
 ROOT::TreePlayer
-gsl
+${GSL_LIBRARY}
 )
 
 

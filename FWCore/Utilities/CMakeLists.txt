@@ -64,8 +64,7 @@ ${TBB_LIBRARIES}
 ${UUID_LIBRARIES}
 Boost::regex
 Threads::Threads
-fmt::fmt
-c++experimental)
+fmt::fmt)
 else()
 target_link_libraries(FWCoreUtilities PUBLIC
 ${CMSMD5_LIBRARY}

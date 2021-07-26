@@ -71,7 +71,7 @@ ROOT::RIO
 ROOT::Thread
 ROOT::Tree
 Threads::Threads
-gsl
+${GSL_LIBRARY}
 )
 
 

@@ -40,7 +40,6 @@ ROOT::RIO
 ROOT::Thread
 ROOT::Tree
 Threads::Threads
-c++experimental
 )
 else()
 target_link_libraries(FWCorePluginManager PUBLIC

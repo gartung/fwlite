@@ -59,7 +59,7 @@ ROOT::RIO
 ROOT::Smatrix
 ROOT::Thread
 ROOT::Tree
-gsl
+${GSL_LIBRARY}
 )
 
 

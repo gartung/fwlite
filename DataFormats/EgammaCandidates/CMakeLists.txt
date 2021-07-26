@@ -81,7 +81,7 @@ ROOT::Net
 ROOT::RIO
 ROOT::Thread
 ROOT::Tree
-gsl
+${GSL_LIBRARY}
 )
 
 

@@ -78,6 +78,8 @@ find_package(VDT)
 
 find_package(fmt)
 
+find_package(GSL)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-attributes")
 
 

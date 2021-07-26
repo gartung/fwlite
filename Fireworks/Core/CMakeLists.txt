@@ -272,9 +272,9 @@ ROOT::Thread
 ROOT::Tree
 ROOT::TreePlayer
 Threads::Threads
-jpeg
-png
-GLEW
+JPEG::JPEG
+PNG::PNG
+${GLEW_LIBRARY}
 ${GRAPHICS_LIB}
 ${SIGCPP_LIBRARY}
 )

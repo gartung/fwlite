@@ -65,6 +65,8 @@ find_package(HepMC)
 
 find_package(OpenGL)
 
+find_package(OpenSSL)
+
 find_package(SIGCPP)
 
 find_package(TBB)
@@ -85,6 +87,9 @@ find_package(JPEG)
 find_package(PNG)
 
 find_package(GLEW)
+if (TARGET GLEW::glew)
+set(GLEW_LIBRARY GLEW::glew)
+endif()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-attributes")
 

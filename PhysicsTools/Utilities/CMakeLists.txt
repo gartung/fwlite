@@ -67,7 +67,6 @@ ROOT::RIO
 ROOT::RooFitCore
 ROOT::Thread
 ROOT::Tree
-ROOT::ROOTCanvasPainter
 SimDataFormatsPileupSummaryInfo
 Threads::Threads
 )

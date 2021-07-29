@@ -151,7 +151,9 @@ macro(add_rootdict_rules name)
                     DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/${classes_h} ${CMAKE_CURRENT_SOURCE_DIR}/${classes_xml}
                     )
     list(APPEND rootmapfiles ${CMAKE_BINARY_DIR}/lib/${dict}.rootmap)
-    list(APPEND pcmfiles ${CMAKE_BINARY_DIR}/lib/lib${dict}_${dict}_x_rdict.pcm)
+    list(APPEND pcmfiles ${CMAKE_BINARY_DIR}/lib/lib${name}_${dict}_rdict.pcm)
+    install(FILES ${CMAKE_BINARY_DIR}/lib/${dict}.rootmap ${CMAKE_BINARY_DIR}/lib/lib${name}_${dict}_rdict.pcm 
+            DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
   endforeach()
   unset(clases_h)
   unset(classes_xml)

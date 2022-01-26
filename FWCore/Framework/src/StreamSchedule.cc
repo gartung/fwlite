@@ -1,4 +1,4 @@
-#include "FWCore/Framework/src/StreamSchedule.h"
+#include "FWCore/Framework/interface/StreamSchedule.h"
 
 #include "DataFormats/Provenance/interface/BranchIDListHelper.h"
 #include "DataFormats/Provenance/interface/ProcessConfiguration.h"
@@ -8,14 +8,14 @@
 #include "FWCore/Framework/src/TriggerReport.h"
 #include "FWCore/Framework/src/TriggerTimingReport.h"
 #include "FWCore/Framework/src/Factory.h"
-#include "FWCore/Framework/src/OutputModuleCommunicator.h"
+#include "FWCore/Framework/interface/OutputModuleCommunicator.h"
 #include "FWCore/Framework/src/TriggerResultInserter.h"
 #include "FWCore/Framework/src/PathStatusInserter.h"
 #include "FWCore/Framework/src/EndPathStatusInserter.h"
-#include "FWCore/Framework/src/WorkerInPath.h"
-#include "FWCore/Framework/src/ModuleHolder.h"
-#include "FWCore/Framework/src/WorkerT.h"
-#include "FWCore/Framework/src/ModuleRegistry.h"
+#include "FWCore/Framework/interface/WorkerInPath.h"
+#include "FWCore/Framework/interface/maker/ModuleHolder.h"
+#include "FWCore/Framework/interface/maker/WorkerT.h"
+#include "FWCore/Framework/interface/ModuleRegistry.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 #include "FWCore/ParameterSet/interface/ParameterSetDescription.h"
@@ -162,7 +162,6 @@ namespace edm {
         number_of_unscheduled_modules_(0),
         streamID_(streamID),
         streamContext_(streamID_, processContext),
-        endpathsAreActive_(true),
         skippingEvent_(false) {
     ParameterSet const& opts = proc_pset.getUntrackedParameterSet("options", ParameterSet());
     bool hasPath = false;
@@ -831,10 +830,6 @@ namespace edm {
       }
     }
   }
-
-  void StreamSchedule::enableEndPaths(bool active) { endpathsAreActive_ = active; }
-
-  bool StreamSchedule::endPathsEnabled() const { return endpathsAreActive_; }
 
   static void fillModuleInPathSummary(Path const& path, size_t which, ModuleInPathSummary& sum) {
     sum.timesVisited += path.timesVisited(which);

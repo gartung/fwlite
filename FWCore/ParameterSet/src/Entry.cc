@@ -18,7 +18,6 @@
 #include <cassert>
 #include <iostream>
 #include <string_view>
-#include <array>
 
 enum : char {
   kTbool = 'B',

@@ -27,6 +27,8 @@
 
 // user include files
 #include "DataFormats/Provenance/interface/BranchType.h"
+#include "DataFormats/Provenance/interface/ProvenanceFwd.h"
+#include "FWCore/Common/interface/FWCoreCommonFwd.h"
 #include "FWCore/Framework/interface/ProductResolverIndexAndSkipBit.h"
 #include "FWCore/Framework/interface/EventSetupRecordKey.h"
 #include "FWCore/Framework/interface/HCTypeTag.h"
@@ -50,10 +52,8 @@
 // forward declarations
 
 namespace edm {
-  class ModuleDescription;
   class ModuleProcessName;
   class ProductResolverIndexHelper;
-  class ProductRegistry;
   class ConsumesCollector;
   template <Transition Tr>
   class EDConsumerBaseESAdaptor;
@@ -88,6 +88,7 @@ namespace edm {
     void itemsToGet(BranchType, std::vector<ProductResolverIndexAndSkipBit>&) const;
     void itemsMayGet(BranchType, std::vector<ProductResolverIndexAndSkipBit>&) const;
 
+    //used for prefetching
     std::vector<ProductResolverIndexAndSkipBit> const& itemsToGetFrom(BranchType iType) const {
       return itemsToGetFromBranch_[iType];
     }
@@ -102,6 +103,10 @@ namespace edm {
     // ---------- member functions ---------------------------
     void updateLookup(BranchType iBranchType, ProductResolverIndexHelper const&, bool iPrefetchMayGet);
     void updateLookup(eventsetup::ESRecordsToProxyIndices const&);
+    void selectInputProcessBlocks(ProductRegistry const& productRegistry,
+                                  ProcessBlockHelperBase const& processBlockHelperBase) {
+      doSelectInputProcessBlocks(productRegistry, processBlockHelperBase);
+    }
 
     typedef ProductLabels Labels;
     void labelsForToken(EDGetToken iToken, Labels& oLabels) const;
@@ -233,6 +238,9 @@ namespace edm {
                                iRecord.type());
     }
 
+    //used for FinalPath
+    void resetItemsToGetFrom(BranchType iType) { itemsToGetFromBranch_[iType].clear(); }
+
   private:
     virtual void registerLateConsumes(eventsetup::ESRecordsToProxyIndices const&) {}
     unsigned int recordConsumes(BranchType iBranch, TypeToGet const& iType, edm::InputTag const& iTag, bool iAlwaysGets);
@@ -253,6 +261,9 @@ namespace edm {
     void throwESConsumesInProcessBlock() const;
 
     edm::InputTag const& checkIfEmpty(edm::InputTag const& tag);
+
+    virtual void doSelectInputProcessBlocks(ProductRegistry const&, ProcessBlockHelperBase const&);
+
     // ---------- member data --------------------------------
 
     struct TokenLookupInfo {

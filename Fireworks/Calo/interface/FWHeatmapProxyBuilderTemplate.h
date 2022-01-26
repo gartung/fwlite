@@ -20,7 +20,6 @@
 
 // system include files
 #include <cmath>
-#include <unordered_map>
 
 // user include files
 #include "Fireworks/Core/interface/FWSimpleProxyBuilder.h"
@@ -167,11 +166,11 @@ protected:
         "implemented by inherited class");
   };
 
-private:
+public:
   FWHeatmapProxyBuilderTemplate(const FWHeatmapProxyBuilderTemplate&) = delete;  // stop default
 
   const FWHeatmapProxyBuilderTemplate& operator=(const FWHeatmapProxyBuilderTemplate&) = delete;  // stop default
-
+private:
   // ---------- member data --------------------------------
 };
 

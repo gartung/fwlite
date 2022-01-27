@@ -20,19 +20,18 @@ cms_rootdict(DataFormatsGEMDigi src/classes.h src/classes_def.xml)
 add_rootdict_rules(DataFormatsGEMDigi)
 
 add_library(DataFormatsGEMDigi SHARED ${DataFormatsGEMDigi_EXTRA_SOURCES}
-  src/AMC13Event.cc
-  src/AMCdata.cc
+  src/GEMAMC.cc
+  src/GEMAMC13.cc
   src/GEMCoPadDigi.cc
   src/GEMDigi.cc
   src/GEMPadDigi.cc
   src/GEMPadDigiCluster.cc
-  src/GEMVfatStatusDigi.cc
+  src/GEMVFAT.cc
   src/ME0Digi.cc
   src/ME0DigiPreReco.cc
   src/ME0PadDigi.cc
   src/ME0PadDigiCluster.cc
   src/ME0TriggerDigi.cc
-  src/VFATdata.cc
 )
 
 set_target_properties(DataFormatsGEMDigi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)

@@ -7,7 +7,6 @@ add_library(FWCoreParameterSet SHARED ${FWCoreParameterSet_EXTRA_SOURCES}
   src/DocFormatHelper.cc
   src/EmptyGroupDescription.cc
   src/Entry.cc
-  src/FileInPath.cc
   src/FillDescriptionFromPSet.cc
   src/IfExistsDescription.cc
   src/IllegalParameters.cc

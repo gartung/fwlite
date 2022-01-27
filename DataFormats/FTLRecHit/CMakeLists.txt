@@ -20,7 +20,6 @@ cms_rootdict(DataFormatsFTLRecHit src/classes.h src/classes_def.xml)
 add_rootdict_rules(DataFormatsFTLRecHit)
 
 add_library(DataFormatsFTLRecHit SHARED ${DataFormatsFTLRecHit_EXTRA_SOURCES}
-  src/FTLCluster.cc
   src/FTLRecHit.cc
   src/FTLTrackingRecHit.cc
   src/FTLUncalibratedRecHit.cc

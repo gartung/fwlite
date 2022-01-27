@@ -51,7 +51,7 @@ add_library(DataFormatsProvenance SHARED ${DataFormatsProvenance_EXTRA_SOURCES}
   src/ProductID.cc
   src/ProductIDToBranchID.cc
   src/ProductProvenance.cc
-  src/ProductProvenanceRetriever.cc
+  src/ProductProvenanceLookup.cc
   src/ProductRegistry.cc
   src/ProductResolverIndexHelper.cc
   src/Provenance.cc
@@ -61,11 +61,13 @@ add_library(DataFormatsProvenance SHARED ${DataFormatsProvenance_EXTRA_SOURCES}
   src/RunLumiEntryInfo.cc
   src/StableProvenance.cc
   src/StoredMergeableRunProductMetadata.cc
+  src/StoredProcessBlockHelper.cc
   src/SubProcessParentageHelper.cc
   src/ThinnedAssociationsHelper.cc
   src/Timestamp.cc
   src/ViewTypeChecker.cc
 )
+
 
 set_target_properties(DataFormatsProvenance PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 

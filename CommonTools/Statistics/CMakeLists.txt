@@ -13,9 +13,6 @@ add_library(CommonToolsStatistics SHARED ${CommonToolsStatistics_EXTRA_SOURCES}
   src/PartitionGenerator.cc
   src/RandomMultiGauss.cc
   src/StatisticsException.cc
-  src/hsm_1d.cc
-  src/lms_1d.cc
-  src/median.cc
 )
 
 set_target_properties(CommonToolsStatistics PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)

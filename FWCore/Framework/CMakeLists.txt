@@ -43,6 +43,7 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/ExceptionActions.cc
   src/ExceptionHelpers.cc
   src/Factory.cc
+  src/FileBlock.cc
   src/GenericHandle.cc
   src/GlobalSchedule.cc
   src/HCTypeTag.cc
@@ -69,6 +70,7 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/OccurrenceForOutput.cc
   src/OutputModuleCommunicator.cc
   src/OutputModuleCommunicatorT.cc
+  src/OutputModuleCore.cc
   src/Path.cc
   src/PathStatusInserter.cc
   src/PathsAndConsumesOfModules.cc
@@ -76,11 +78,13 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/PrincipalCache.cc
   src/PrincipalGetAdapter.cc
   src/ProcessBlock.cc
+  src/ProcessBlockForOutput.cc
   src/ProcessBlockPrincipal.cc
   src/ProcessingController.cc
   src/ProducerBase.cc
   src/ProducesCollector.cc
   src/ProductDeletedException.cc
+  src/ProductProvenanceRetriever.cc
   src/ProductRegistryHelper.cc
   src/ProductResolverBase.cc
   src/ProductResolvers.cc
@@ -113,7 +117,7 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/WorkerT.cc
   src/defaultCmsRunServices.cc
   src/edmodule_mightGet_config.cc
-  src/esTaskArenas.cc
+  src/exceptionContext.cc
   src/getAllTriggerNames.cc
   src/getProducerParameterSet.cc
   src/global/EDAnalyzerBase.cc
@@ -141,6 +145,7 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/one/filterImplementors.cc
   src/one/outputmoduleImplementors.cc
   src/one/producerImplementors.cc
+  src/processBlockUtilities.cc
   src/stream/EDAnalyzerAdaptorBase.cc
   src/stream/EDAnalyzerBase.cc
   src/stream/EDFilterAdaptorBase.cc
@@ -149,7 +154,6 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/stream/EDProducerBase.cc
   src/stream/ProducingModuleAdaptorBase.cc
   src/stream/ProducingModuleHelper.cc
-  src/throwIfImproperDependencies.cc
 )
 
 set_target_properties(FWCoreFramework PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)

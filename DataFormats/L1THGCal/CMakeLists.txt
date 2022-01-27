@@ -21,6 +21,7 @@ add_library(DataFormatsL1THGCal SHARED ${DataFormatsL1THGCal_EXTRA_SOURCES}
   src/ClusterShapes.cc
   src/HGCFETriggerDigi.cc
   src/HGCalCluster.cc
+  src/HGCalConcentratorData.cc
   src/HGCalMulticluster.cc
   src/HGCalTower.cc
   src/HGCalTowerMap.cc

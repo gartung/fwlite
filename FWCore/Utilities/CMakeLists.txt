@@ -4,6 +4,7 @@ add_library(FWCoreUtilities SHARED ${FWCoreUtilities_EXTRA_SOURCES}
   src/CPUServiceBase.cc
   src/CPUTimer.cc
   src/CRC32Calculator.cc
+  src/ChildrenCPUTimer.cc
   src/ConvertException.cc
   src/DebugMacros.cc
   src/Digest.cc
@@ -12,6 +13,7 @@ add_library(FWCoreUtilities SHARED ${FWCoreUtilities_EXTRA_SOURCES}
   src/Exception.cc
   src/ExceptionCollector.cc
   src/ExceptionPropagate.cc
+  src/FileInPath.cc
   src/FriendlyName.cc
   src/GlobalIdentifier.cc
   src/Guid.cc

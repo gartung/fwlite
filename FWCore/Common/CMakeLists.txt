@@ -18,8 +18,12 @@ add_rootdict_rules(FWCoreCommon)
 add_library(FWCoreCommon SHARED ${FWCoreCommon_EXTRA_SOURCES}
   src/EventBase.cc
   src/LuminosityBlockBase.cc
+  src/OutputProcessBlockHelper.cc
+  src/ProcessBlockHelper.cc
+  src/ProcessBlockHelperBase.cc
   src/Provenance.cc
   src/RunBase.cc
+  src/SubProcessBlockHelper.cc
   src/TriggerNames.cc
   src/TriggerResultsByName.cc
 )

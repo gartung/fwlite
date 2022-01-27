@@ -41,6 +41,10 @@ TTTrack_TrackWord::TTTrack_TrackWord(unsigned int valid,
   setTrackWord(valid, momentum, POCA, rInv, chi2RPhi, chi2RZ, bendChi2, hitPattern, mvaQuality, mvaOther, sector);
 }
 
+const double TTTrack_TrackWord::stepRinv = (2. * std::abs(TTTrack_TrackWord::minRinv)) / (1 << TTTrack_TrackWord::TrackBitWidths::kRinvSize);
+const double TTTrack_TrackWord::stepPhi0 = (2. * std::abs(TTTrack_TrackWord::minPhi0)) / (1 << TTTrack_TrackWord::TrackBitWidths::kPhiSize);
+const double TTTrack_TrackWord::stepZ0 = (2. * std::abs(TTTrack_TrackWord::minZ0)) / (1 << TTTrack_TrackWord::TrackBitWidths::kZ0Size);
+
 TTTrack_TrackWord::TTTrack_TrackWord(unsigned int valid,
                                      unsigned int rInv,
                                      unsigned int phi0,

@@ -15,6 +15,7 @@ ${UUID_INCLUDE_DIR}
 ${VDT_INCLUDE_DIR}
 ${XZ_INCLUDE_DIR}
 /usr/include
+${HLS_INCLUDE_DIR}
 )
 
 cms_rootdict(DataFormatsHLTReco src/classes.h src/classes_def.xml)

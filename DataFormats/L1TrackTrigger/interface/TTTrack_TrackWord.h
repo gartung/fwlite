@@ -90,10 +90,10 @@ public:
   static constexpr double minZ0 = -20.46912512;
   static constexpr double minD0 = -16.;
 
-  static constexpr double stepRinv = (2. * std::abs(minRinv)) / (1 << TrackBitWidths::kRinvSize);
-  static constexpr double stepPhi0 = (2. * std::abs(minPhi0)) / (1 << TrackBitWidths::kPhiSize);
+  static const double stepRinv;
+  static const double stepPhi0;
+  static const double stepZ0;
   static constexpr double stepTanL = (1. / (1 << 12));
-  static constexpr double stepZ0 = (2. * std::abs(minZ0)) / (1 << TrackBitWidths::kZ0Size);
   static constexpr double stepD0 = (1. / (1 << 8));
 
   // Bin edges for chi2/dof

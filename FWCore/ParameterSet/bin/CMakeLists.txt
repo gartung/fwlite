@@ -65,6 +65,7 @@ FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities
 Threads::Threads
+intl
 )
 
 

@@ -1,7 +1,7 @@
 #include "DataFormats/ParticleFlowReco/interface/PFTrajectoryPoint.h"
 #include <ostream>
 #include <algorithm>
-
+#include <array>
 using namespace reco;
 
 // To be kept in synch with the enumerator definitions in PFTrajectoryPoint.h file

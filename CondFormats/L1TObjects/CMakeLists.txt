@@ -68,10 +68,12 @@ add_library(CondFormatsL1TObjects SHARED ${CondFormatsL1TObjects_EXTRA_SOURCES}
   src/L1TGlobalParameters.cc
   src/L1TGlobalPrescalesVetos.cc
   src/L1TGlobalPrescalesVetosFract.cc
+  src/L1TMuonBarrelKalmanParams.cc
   src/L1TMuonBarrelParams.cc
   src/L1TMuonEndCapForest.cc
   src/L1TMuonEndCapParams.cc
   src/L1TMuonGlobalParams.cc
+  src/L1TMuonOverlapFwVersion.cc
   src/L1TMuonOverlapParams.cc
   src/L1TTwinMuxParams.cc
   src/L1TUtmAlgorithm.cc
@@ -135,6 +137,7 @@ add_library(CondFormatsL1TObjects SHARED ${CondFormatsL1TObjects_EXTRA_SOURCES}
   src/T_EventSetup_L1TMuonBarrelParams.cc
   src/T_EventSetup_L1TMuonEndCapForest.cc
   src/T_EventSetup_L1TMuonEndCapParams.cc
+  src/T_EventSetup_L1TMuonOverlapFwVersion.cc
   src/T_EventSetup_L1TTwinMuxParams.cc
   src/T_EventSetup_L1TUtmAlgorithm.cc
   src/T_EventSetup_L1TUtmBin.cc

@@ -69,6 +69,7 @@ ROOT::RIO
 ROOT::Thread
 ROOT::Tree
 ${GSL_LIBRARY}
+TBB::tbb
 )
 
 

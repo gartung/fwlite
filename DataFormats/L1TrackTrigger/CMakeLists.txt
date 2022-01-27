@@ -12,6 +12,7 @@ ${TBB_INCLUDE_DIRS}
 ${TINYXML2_INCLUDE_DIR}
 ${UUID_INCLUDE_DIR}
 /usr/include
+${HLS_INCLUDE_DIR}
 )
 
 cms_rootdict(DataFormatsL1TrackTrigger src/classes.h src/classes_def.xml)

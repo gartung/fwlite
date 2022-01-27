@@ -255,7 +255,7 @@ private:
   constexpr std::array<unsigned long long int, S> powersOfTwo() const {
     std::array<unsigned long long int, S> lut = {};
     for (int i = 0; i < S; i++)
-      lut[i] = std::pow(2, i);
+      lut[i] = i * i;
     return lut;
   }
 

@@ -25,6 +25,7 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(runFormulaEvaluator PUBLIC
 CommonToolsUtils
+intl
 )
 
 

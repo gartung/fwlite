@@ -23,6 +23,7 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(edmClassStorageSize PUBLIC
 Boost::program_options
+intl
 FWCoreFWLite
 ROOT::Core
 ROOT::MathCore
@@ -65,6 +66,7 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(edmBranchStorageSize PUBLIC
 Boost::program_options
+intl
 FWCoreFWLite
 ROOT::Core
 ROOT::MathCore

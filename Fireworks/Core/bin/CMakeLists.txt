@@ -29,6 +29,7 @@ ${VDT_INCLUDE_DIR}
 )
 
 target_link_libraries(cmsShow.exe PUBLIC
+intl
 FWCoreMessageLogger
 FireworksCore
 ROOT::Core
@@ -90,6 +91,7 @@ ${ZLIB_INCLUDE_DIR}
 
 target_link_libraries(cmsShowSendReport PUBLIC
 FireworksCore
+intl
 z
 )
 

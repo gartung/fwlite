@@ -20,6 +20,7 @@ ${UUID_INCLUDE_DIR}
 )
 
 target_link_libraries(edmToFriendlyClassName PUBLIC
+intl
 FWCoreUtilities
 )
 
@@ -53,6 +54,7 @@ ${ZLIB_INCLUDE_DIR}
 )
 
 target_link_libraries(cms_adler32 PUBLIC
+intl
 FWCoreUtilities
 fmt::fmt
 z
@@ -64,4 +66,3 @@ add_python_rules(FWCore/Utilities/bin/)
 add_script_rules(FWCore/Utilities/bin/)
 
 install( TARGETS cms_adler32 DESTINATION ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BINDIR}  EXPORT stitched::)
-

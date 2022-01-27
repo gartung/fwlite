@@ -23,6 +23,7 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(edmPluginHelp PUBLIC
 Boost::program_options
+intl
 FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities
@@ -61,11 +62,11 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(edmWriteConfigs PUBLIC
 Boost::program_options
+intl
 FWCoreParameterSet
 FWCorePluginManager
 FWCoreUtilities
 Threads::Threads
-intl
 )
 
 

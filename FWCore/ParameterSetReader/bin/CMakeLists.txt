@@ -23,6 +23,7 @@ ${UUID_INCLUDE_DIR}
 )
 
 target_link_libraries(edmConfigHash PUBLIC
+intl
 FWCoreParameterSet
 FWCoreParameterSetReader
 Threads::Threads
@@ -60,6 +61,7 @@ ${UUID_INCLUDE_DIR}
 )
 
 target_link_libraries(edmParameterSetDump PUBLIC
+intl
 FWCoreParameterSet
 FWCoreParameterSetReader
 Threads::Threads

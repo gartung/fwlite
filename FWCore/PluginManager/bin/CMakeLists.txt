@@ -22,6 +22,7 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(edmPluginDump PUBLIC
 Boost::program_options
+intl
 FWCorePluginManager
 Threads::Threads
 )
@@ -57,8 +58,10 @@ ${UUID_INCLUDE_DIR}
 
 target_link_libraries(edmPluginRefresh PUBLIC
 Boost::program_options
+intl
 FWCorePluginManager
 Threads::Threads
+intl
 )
 
 

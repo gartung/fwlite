@@ -166,7 +166,11 @@ add_subdirectory(L1TParticleFlow)
 
 add_subdirectory(L1Trigger)
 
+add_subdirectory(L1TMuonPhase2)
 
+add_subdirectory(L1DTTrackFinder)
+
+add_subdirectory(Scouting)
 
 set(pythondir ${CMAKE_BINARY_DIR}/python/DataFormats)
 
@@ -179,6 +183,9 @@ __path__.append(os.path.dirname(os.path.realpath(__file__)))")
 add_custom_target(DataFormats_all)
 
 add_dependencies(DataFormats_all
+  DataFormatsScouting
+  DataFormatsL1DTTrackFinder
+  DataFormatsL1TMuonPhase2
   DataFormatsVertexReco
   DataFormatsSiPixelDigi
   DataFormatsCaloRecHit

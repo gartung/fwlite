@@ -21,6 +21,8 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/ESProxyFactoryProducer.cc
   src/ESRecordsToProxyIndices.cc
   src/ESSourceDataProxyBase.cc
+  src/ESSourceDataProxyConcurrentBase.cc
+  src/ESSourceDataProxyNonConcurrentBase.cc
   src/ESTagGetter.cc
   src/ESValidHandle.cc
   src/EarlyDeleteHelper.cc
@@ -117,9 +119,13 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/WorkerT.cc
   src/defaultCmsRunServices.cc
   src/edmodule_mightGet_config.cc
+  src/ensureAvailableAccelerators.cc
   src/exceptionContext.cc
   src/getAllTriggerNames.cc
   src/getProducerParameterSet.cc
+  src/insertSelectedProcesses.cc
+  src/processBlockUtilities.cc
+  src/processEDAliases.cc
   src/global/EDAnalyzerBase.cc
   src/global/EDFilterBase.cc
   src/global/EDProducerBase.cc
@@ -128,7 +134,6 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/global/filterImplementors.cc
   src/global/outputmoduleImplementors.cc
   src/global/producerImplementors.cc
-  src/insertSelectedProcesses.cc
   src/limited/EDAnalyzerBase.cc
   src/limited/EDFilterBase.cc
   src/limited/EDProducerBase.cc
@@ -145,7 +150,6 @@ add_library(FWCoreFramework SHARED ${FWCoreFramework_EXTRA_SOURCES}
   src/one/filterImplementors.cc
   src/one/outputmoduleImplementors.cc
   src/one/producerImplementors.cc
-  src/processBlockUtilities.cc
   src/stream/EDAnalyzerAdaptorBase.cc
   src/stream/EDAnalyzerBase.cc
   src/stream/EDFilterAdaptorBase.cc

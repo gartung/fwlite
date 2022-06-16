@@ -19,10 +19,12 @@ add_rootdict_rules(SimDataFormatsGeneratorProducts)
 
 add_library(SimDataFormatsGeneratorProducts SHARED ${SimDataFormatsGeneratorProducts_EXTRA_SOURCES}
   src/GenEventInfoProduct.cc
+  src/GenEventInfoProduct3.cc
   src/GenFilterInfo.cc
   src/GenLumiInfoHeader.cc
   src/GenLumiInfoProduct.cc
   src/GenRunInfoProduct.cc
+  src/HepMC3Product.cc
   src/HepMCProduct.cc
   src/LHEEventProduct.cc
   src/LHERunInfoProduct.cc
@@ -53,6 +55,7 @@ ${XZ_INCLUDE_DIR}
 
 target_link_libraries(SimDataFormatsGeneratorProducts PUBLIC
 ${HEPMC_HepMC_LIBRARY}
+${HEPMC3_LIBRARIES}
 DataFormatsCommon
 FWCoreMessageLogger
 FWCoreUtilities

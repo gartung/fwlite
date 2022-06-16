@@ -64,6 +64,8 @@ find_package(CMSMD5)
 
 find_package(HepMC)
 
+find_package(HepMC3)
+
 find_package(OpenGL)
 
 find_package(OpenSSL)

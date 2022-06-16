@@ -41,7 +41,7 @@ add_library(DataFormatsL1Trigger SHARED ${DataFormatsL1Trigger_EXTRA_SOURCES}
   src/Muon.cc
   src/MuonShower.cc
   src/Tau.cc
-  src/Vertex.cc
+  src/VertexWord.cc
 )
 
 set_target_properties(DataFormatsL1Trigger PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)

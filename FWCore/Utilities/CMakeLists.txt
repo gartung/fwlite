@@ -37,6 +37,8 @@ add_library(FWCoreUtilities SHARED ${FWCoreUtilities_EXTRA_SOURCES}
   src/UnixSignalHandlers.cc
   src/WallclockTimer.cc
   src/WrappedClassName.cc
+  src/path_configuration.cc
+  src/processGUID.cc
   src/resolveSymbolicLinks.cc
   src/stemFromPath.cc
   src/typelookup.cc
